@@ -24,21 +24,9 @@ namespace GPAPlanner.Services.Initializors
 
         public static void CreateSemesters()
         {
-            foreach(var sem in AppStaticData.Semesters)
+            foreach (var sem in AppStaticData.Semesters)
             {
                 Semester.InitializeSortSubjectsToSemersters(sem);
-            }
-        }
-
-        public static void TestData()
-        {
-            if (AppStaticData.Semesters[3].Subjects != null)
-            {
-                MessageBox.Show(AppStaticData.Semesters[3].Subjects.Count.ToString()); 
-            }
-            else
-            {
-                MessageBox.Show("NULL");
             }
         }
 
@@ -53,11 +41,54 @@ namespace GPAPlanner.Services.Initializors
             }
         }
 
-        public void InitializeSubject()
+        public void LoadGradesTable()
         {
-            var subjects = new List<Subject>{
-        };
-            if(_appSession != null)
+            if (_appSession != null)
+            {
+                if (_appSession._gradeTableDataStream != null)
+                {
+                    AppStaticData.GradeDefinitions = _appSession._gradeTableDataStream.GetGrades();
+                    MessageBox.Show("OK" + AppStaticData.GradeDefinitions[0].GradeIndicator);
+                }
+            }
+        }
+
+        public void CreateGrades()
+        {
+            if (_appSession != null)
+            {
+                if (_appSession._gradeTableDataStream != null)
+                {
+                    _appSession._gradeTableDataStream.CreateTable();
+
+                    List<GradeTable> grades = new List<GradeTable>
+                    {
+                        new GradeTable { GradeIndicator = "A+", Low_Mark = 85, High_Mark = 100, GPV = 4.00 },
+                        new GradeTable { GradeIndicator = "A", Low_Mark = 70, High_Mark = 84, GPV = 4.00 },
+                        new GradeTable { GradeIndicator = "A-", Low_Mark = 65, High_Mark = 69, GPV = 3.70 },
+                        new GradeTable { GradeIndicator = "B+", Low_Mark = 60, High_Mark = 64, GPV = 3.30 },
+                        new GradeTable { GradeIndicator = "B", Low_Mark = 55, High_Mark = 59, GPV = 3.00 },
+                        new GradeTable { GradeIndicator = "B-", Low_Mark = 50, High_Mark = 54, GPV = 2.70 },
+                        new GradeTable { GradeIndicator = "C+", Low_Mark = 45, High_Mark = 49, GPV = 2.30 },
+                        new GradeTable { GradeIndicator = "C", Low_Mark = 40, High_Mark = 44, GPV = 2.00 },
+                        new GradeTable { GradeIndicator = "C-", Low_Mark = 35, High_Mark = 39, GPV = 1.70 },
+                        new GradeTable { GradeIndicator = "D+", Low_Mark = 30, High_Mark = 34, GPV = 1.30 },
+                        new GradeTable { GradeIndicator = "D", Low_Mark = 25, High_Mark = 29, GPV = 1.00 },
+                        new GradeTable { GradeIndicator = "E", Low_Mark = 0, High_Mark = 24, GPV = 0.00 }
+                    };
+
+                    foreach (var grade in grades)
+                    {
+                        _appSession._gradeTableDataStream.InsertGrade(grade);
+                    }
+                }
+            }
+        }
+        public void CreateSubjects()
+        {
+            var subjects = new List<Subject> { };
+
+            if (_appSession != null)
             {
                 if (_appSession._subjectDataStream != null)
                 {
@@ -66,7 +97,7 @@ namespace GPAPlanner.Services.Initializors
                     foreach (var subject in subjects)
                     {
                         _appSession._subjectDataStream.InsertSubject(subject);
-                    } 
+                    }
                 }
             }
         }

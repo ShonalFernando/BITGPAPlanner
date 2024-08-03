@@ -18,34 +18,33 @@ namespace GPAPlanner.Model.NonRelational
 
         public static void InitializeSortSubjectsToSemersters(Semester semester)
         {
-            if (semester.Subjects != null)
+            if (semester.Subjects == null)
             {
-                foreach (var subject in AppStaticData.SubjectDefinitions)
-                {
-                    if (semester.SemesterID == subject.Semester)
-                    {
+                semester.Subjects = new();
+            }
 
-                        if (subject.Syllabus == Syllabus.Old || subject.Syllabus == Syllabus.Mapping_For_New)
+            foreach (var subject in AppStaticData.SubjectDefinitions)
+            {
+                if (semester.SemesterID == subject.Semester)
+                {
+
+                    if (subject.Syllabus == Syllabus.Old || subject.Syllabus == Syllabus.Mapping_For_New)
+                    {
+                        if (semester.isOldSyllabus)
                         {
-                            if (semester.isOldSyllabus)
-                            {
-                                semester.Subjects.Add(subject);
-                            }
+                            semester.Subjects.Add(subject);
                         }
-                        else
+                    }
+                    else
+                    {
+                        if (!semester.isOldSyllabus)
                         {
-                            if (!semester.isOldSyllabus)
-                            {
-                                semester.Subjects.Add(subject);
-                            }
+                            semester.Subjects.Add(subject);
                         }
                     }
                 }
             }
-            else
-            {
-                semester.Subjects = new();
-            }
+
         }
     }
 }

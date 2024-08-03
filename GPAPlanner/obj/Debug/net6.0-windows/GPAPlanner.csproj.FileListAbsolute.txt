@@ -59,3 +59,12 @@ D:\Source\Repos\BITGPAPlanner\GPAPlanner\obj\Debug\net6.0-windows\refint\GPAPlan
 D:\Source\Repos\BITGPAPlanner\GPAPlanner\obj\Debug\net6.0-windows\GPAPlanner.pdb
 D:\Source\Repos\BITGPAPlanner\GPAPlanner\obj\Debug\net6.0-windows\GPAPlanner.genruntimeconfig.cache
 D:\Source\Repos\BITGPAPlanner\GPAPlanner\obj\Debug\net6.0-windows\ref\GPAPlanner.dll
+D:\Source\Repos\BITGPAPlanner\GPAPlanner\obj\Debug\net6.0-windows\View\Semesters.g.cs
+D:\Source\Repos\BITGPAPlanner\GPAPlanner\obj\Debug\net6.0-windows\View\Semesters.baml
+D:\Source\Repos\BITGPAPlanner\GPAPlanner\obj\Debug\net6.0-windows\View\CalculationPortal.g.cs
+D:\Source\Repos\BITGPAPlanner\GPAPlanner\obj\Debug\net6.0-windows\View\CalculationPortal.baml
+D:\Source\Repos\BITGPAPlanner\GPAPlanner\bin\Debug\net6.0-windows\ControlzEx.dll
+D:\Source\Repos\BITGPAPlanner\GPAPlanner\bin\Debug\net6.0-windows\MahApps.Metro.dll
+D:\Source\Repos\BITGPAPlanner\GPAPlanner\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+D:\Source\Repos\BITGPAPlanner\GPAPlanner\bin\Debug\net6.0-windows\de\MahApps.Metro.resources.dll
+D:\Source\Repos\BITGPAPlanner\GPAPlanner\obj\Debug\net6.0-windows\App.baml

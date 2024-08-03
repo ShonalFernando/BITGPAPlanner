@@ -2,6 +2,9 @@
 using GPAPlanner.Model.NonRelational;
 using GPAPlanner.Services.Initializors;
 using GPAPlanner.Session;
+using GPAPlanner.View;
+using GPAPlanner.ViewModel;
+using MahApps.Metro.Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +25,7 @@ namespace GPAPlanner
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : MetroWindow
     {
         public MainWindow()
         {
@@ -32,10 +35,15 @@ namespace GPAPlanner
 
             DataInitializer dataInitializer = new(appSession);
             dataInitializer.LoadSubjects();
+            dataInitializer.LoadGradesTable();
             DataInitializer.CreateSemesters();
-            DataInitializer.TestData();
 
 
+            GPAProcessor gpapro = new();
+
+            CalculationPortal sem = new();
+            sem.DataContext = gpapro;
+            NavFrame.Content = sem;
         }
     }
 }
