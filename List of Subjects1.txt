@@ -1,0 +1,810 @@
+        //   new Subject
+        //    {
+        //        SubjectID = 21,
+        //        Semester = 5,
+        //        Name = "Fundamentals of Management & Entrepreneurship",
+        //        Syllabus = Syllabus.New,
+        //        SubjectModifier = SubjectModifier.EN,
+        //        Code = 5106,
+        //        Credit = 2,
+        //        GPACredit = 0 // Non-GPA subject
+        //    },
+        //    new Subject
+        //    {
+        //        SubjectID = 22,
+        //        Semester = 6,
+        //        Name = "Software Development Project",
+        //        Syllabus = Syllabus.New,
+        //        SubjectModifier = SubjectModifier.IT,
+        //        Code = 5106,
+        //        Credit = 8,
+        //        GPACredit = 8
+        //    },
+        //    new Subject
+        //    {
+        //        SubjectID = 23,
+        //        Semester = 5,
+        //        Name = "Professional Practice",
+        //        Syllabus = Syllabus.New,
+        //        SubjectModifier = SubjectModifier.IT,
+        //        Code = 5206,
+        //        Credit = 3,
+        //        GPACredit = 3
+        //    },
+        //    new Subject
+        //    {
+        //        SubjectID = 24,
+        //        Semester = 5,
+        //        Name = "Principles of Information Security",
+        //        Syllabus = Syllabus.New,
+        //        SubjectModifier = SubjectModifier.IT,
+        //        Code = 5306,
+        //        Credit = 3,
+        //        GPACredit = 3
+        //    },
+        //    new Subject
+        //    {
+        //        SubjectID = 25,
+        //        Semester = 5,
+        //        Name = "Systems & Network Administration",
+        //        Syllabus = Syllabus.New,
+        //        SubjectModifier = SubjectModifier.IT,
+        //        Code = 5406,
+        //        Credit = 3,
+        //        GPACredit = 3
+        //    },
+        //    new Subject
+        //    {
+        //        SubjectID = 26,
+        //        Semester = 5,
+        //        Name = "Mathematics for Computing II",
+        //        Syllabus = Syllabus.New,
+        //        SubjectModifier = SubjectModifier.IT,
+        //        Code = 5506,
+        //        Credit = 3,
+        //        GPACredit = 3
+        //    },
+        //    new Subject
+        //    {
+        //        SubjectID = 27,
+        //        Semester = 6,
+        //        Name = "Emerging Topics in Information Technology",
+        //        Syllabus = Syllabus.New,
+        //        SubjectModifier = SubjectModifier.EN,
+        //        Code = 6106,
+        //        Credit = 2,
+        //        GPACredit = 0 // Non-GPA subject
+        //    },
+        //    new Subject
+        //    {
+        //        SubjectID = 28,
+        //        Semester = 6,
+        //        Name = "Software Quality Assurance",
+        //        Syllabus = Syllabus.New,
+        //        SubjectModifier = SubjectModifier.IT,
+        //        Code = 6206,
+        //        Credit = 3,
+        //        GPACredit = 3
+        //    },
+        //    new Subject
+        //    {
+        //        SubjectID = 29,
+        //        Semester = 6,
+        //        Name = "Mobile Application Development",
+        //        Syllabus = Syllabus.New,
+        //        SubjectModifier = SubjectModifier.IT,
+        //        Code = 6306,
+        //        Credit = 4,
+        //        GPACredit = 4
+        //    },
+        //    new Subject
+        //    {
+        //        SubjectID = 30,
+        //        Semester = 6,
+        //        Name = "Network Security and Audit",
+        //        Syllabus = Syllabus.New,
+        //        SubjectModifier = SubjectModifier.IT,
+        //        Code = 6406,
+        //        Credit = 3,
+        //        GPACredit = 3
+        //    },
+        //    new Subject
+        //    {
+        //        SubjectID = 31,
+        //        Semester = 6,
+        //        Name = "e-Business Technologies",
+        //        Syllabus = Syllabus.New,
+        //        SubjectModifier = SubjectModifier.IT,
+        //        Code = 6506,
+        //        Credit = 3,
+        //        GPACredit = 3
+        //    }
+
+            //new Subject
+            //{
+            //    SubjectID = 11,
+            //    Semester = 3,
+            //    Name = "Communication Skills II",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.EN,
+            //    Code = 3106,
+            //    Credit = 2,
+            //    GPACredit = 0
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 12,
+            //    Semester = 3,
+            //    Name = "Object Oriented Analysis & Design",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 3106,
+            //    Credit = 3,
+            //    GPACredit = 3
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 13,
+            //    Semester = 3,
+            //    Name = "Data Structures and Algorithms",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 3206,
+            //    Credit = 3,
+            //    GPACredit = 3
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 14,
+            //    Semester = 3,
+            //    Name = "Data Management Systems",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 3306,
+            //    Credit = 3,
+            //    GPACredit = 3
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 15,
+            //    Semester = 3,
+            //    Name = "Web Application Development II",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 3406,
+            //    Credit = 4,
+            //    GPACredit = 4
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 16,
+            //    Semester = 4,
+            //    Name = "User Experience Design",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 4106,
+            //    Credit = 3,
+            //    GPACredit = 3
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 17,
+            //    Semester = 4,
+            //    Name = "Enterprise Application Development",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 4206,
+            //    Credit = 4,
+            //    GPACredit = 4
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 18,
+            //    Semester = 4,
+            //    Name = "Information Technology Project Management",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 4306,
+            //    Credit = 3,
+            //    GPACredit = 3
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 19,
+            //    Semester = 4,
+            //    Name = "Agile Software Development",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 4406,
+            //    Credit = 4,
+            //    GPACredit = 4
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 20,
+            //    Semester = 4,
+            //    Name = "Computer Networks",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 4506,
+            //    Credit = 3,
+            //    GPACredit = 3
+            //}
+
+            //new Subject
+            //{
+            //    SubjectID = 1,
+            //    Semester = 1,
+            //    Name = "Introductory Mathematics",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.EN,
+            //    Code = 1106,
+            //    Credit = 2,
+            //    GPACredit = 0 // '-' represents no GPA credit
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 2,
+            //    Semester = 1,
+            //    Name = "Information Systems",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 1106,
+            //    Credit = 4,
+            //    GPACredit = 4
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 3,
+            //    Semester = 1,
+            //    Name = "Computer Systems",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 1206,
+            //    Credit = 4,
+            //    GPACredit = 4
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 4,
+            //    Semester = 1,
+            //    Name = "Free and Open Source Software for Personal Computing",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 1306,
+            //    Credit = 3,
+            //    GPACredit = 3
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 5,
+            //    Semester = 1,
+            //    Name = "Introduction to Programming",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 1406,
+            //    Credit = 4,
+            //    GPACredit = 4
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 6,
+            //    Semester = 2,
+            //    Name = "Communication Skills I",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.EN,
+            //    Code = 2106,
+            //    Credit = 2,
+            //    GPACredit = 0 // '-' represents no GPA credit
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 7,
+            //    Semester = 2,
+            //    Name = "Mathematics for Computing I",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 2106,
+            //    Credit = 3,
+            //    GPACredit = 3
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 8,
+            //    Semester = 2,
+            //    Name = "Fundamentals of Software Engineering",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 2206,
+            //    Credit = 4,
+            //    GPACredit = 4
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 9,
+            //    Semester = 2,
+            //    Name = "Database Systems",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 2306,
+            //    Credit = 4,
+            //    GPACredit = 4
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 10,
+            //    Semester = 2,
+            //    Name = "Web Application Development I",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 2406,
+            //    Credit = 4,
+            //    GPACredit = 4
+            //}
+
+            //                new Subject
+            //{
+            //    SubjectID = 1,
+            //    Semester = 1,
+            //    Name = "Information Systems & Technology",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 1105,
+            //    Credit = 3,
+            //    GPACredit = 3 // Assuming GPA Credit is applicable
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 2,
+            //    Semester = 1,
+            //    Name = "Computer Systems I",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 1205,
+            //    Credit = 3,
+            //    GPACredit = 3
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 3,
+            //    Semester = 1,
+            //    Name = "Web Application Development I",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 1305,
+            //    Credit = 3,
+            //    GPACredit = 3
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 4,
+            //    Semester = 1,
+            //    Name = "Communication Skills",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.EN,
+            //    Code = 1101,
+            //    Credit = 3,
+            //    GPACredit = 0 // Non-GPA subject
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 5,
+            //    Semester = 2,
+            //    Name = "Introductory Mathematics",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.EN,
+            //    Code = 1201,
+            //    Credit = 2,
+            //    GPACredit = 0
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 6,
+            //    Semester = 2,
+            //    Name = "Personal Computing",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.EN,
+            //    Code = 1301,
+            //    Credit = 2,
+            //    GPACredit = 0
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 7,
+            //    Semester = 2,
+            //    Name = "Mathematics for Computing I",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 2105,
+            //    Credit = 4,
+            //    GPACredit = 4
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 8,
+            //    Semester = 2,
+            //    Name = "Programming I",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 2205,
+            //    Credit = 4,
+            //    GPACredit = 4
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 9,
+            //    Semester = 2,
+            //    Name = "Database Systems I",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 2305,
+            //    Credit = 4,
+            //    GPACredit = 4
+            //},
+            //new Subject
+            //{
+            //    SubjectID = 10,
+            //    Semester = 2,
+            //    Name = "Systems Analysis & Design",
+            //    Syllabus = Syllabus.New,
+            //    SubjectModifier = SubjectModifier.IT,
+            //    Code = 2405,
+            //    Credit = 4,
+            //    GPACredit = 4
+            //}
+
+ new Subject
+            {
+                SubjectID = 42,
+                Semester = 3,
+                Name = "Object Oriented Analysis & Design",
+                Syllabus = Syllabus.New,
+                SubjectModifier = SubjectModifier.IT,
+                Code = 3105,
+                Credit = 3,
+                GPACredit = 3
+            },
+            new Subject
+            {
+                SubjectID = 43,
+                Semester = 3,
+                Name = "Fundamentals of Software Engineering",
+                Syllabus = Syllabus.New,
+                SubjectModifier = SubjectModifier.IT,
+                Code = 3205,
+                Credit = 3,
+                GPACredit = 3
+            },
+            new Subject
+            {
+                SubjectID = 44,
+                Semester = 3,
+                Name = "Mathematics for Computing II",
+                Syllabus = Syllabus.New,
+                SubjectModifier = SubjectModifier.IT,
+                Code = 3305,
+                Credit = 3,
+                GPACredit = 3
+            },
+            new Subject
+            {
+                SubjectID = 45,
+                Semester = 3,
+                Name = "User Interface Design",
+                Syllabus = Syllabus.New,
+                SubjectModifier = SubjectModifier.IT,
+                Code = 3405,
+                Credit = 3,
+                GPACredit = 3
+            },
+            new Subject
+            {
+                SubjectID = 46,
+                Semester = 3,
+                Name = "Web Application Development II",
+                Syllabus = Syllabus.New,
+                SubjectModifier = SubjectModifier.IT,
+                Code = 3505,
+                Credit = 4,
+                GPACredit = 4
+            },
+            new Subject
+            {
+                SubjectID = 47,
+                Semester = 3,
+                Name = "Programming II",
+                Syllabus = Syllabus.New,
+                SubjectModifier = SubjectModifier.IT,
+                Code = 4105,
+                Credit = 4,
+                GPACredit = 4
+            },
+            new Subject
+            {
+                SubjectID = 48,
+                Semester = 3,
+                Name = "IT Project Management",
+                Syllabus = Syllabus.New,
+                SubjectModifier = SubjectModifier.IT,
+                Code = 4205,
+                Credit = 3,
+                GPACredit = 3
+            },
+            new Subject
+            {
+                SubjectID = 49,
+                Semester = 3,
+                Name = "Rapid Software Development",
+                Syllabus = Syllabus.New,
+                SubjectModifier = SubjectModifier.IT,
+                Code = 4305,
+                Credit = 4,
+                GPACredit = 4
+            },
+            new Subject
+            {
+                SubjectID = 50,
+                Semester = 3,
+                Name = "Computer Networks",
+                Syllabus = Syllabus.New,
+                SubjectModifier = SubjectModifier.IT,
+                Code = 4405,
+                Credit = 3,
+                GPACredit = 3
+            }
+
+        //    new Subject
+        //{
+        //    SubjectID = 51,
+        //    Semester = 5,
+        //    Name = "Professional Issues in IT",
+        //    Syllabus = Syllabus.Old,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 5105,
+        //    Credit = 3,
+        //    GPACredit = 3
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 52,
+        //    Semester = 5,
+        //    Name = "Information Systems Security",
+        //    Syllabus = Syllabus.Old,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 5205,
+        //    Credit = 3,
+        //    GPACredit = 3
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 53,
+        //    Semester = 5,
+        //    Name = "Computer Systems II",
+        //    Syllabus = Syllabus.Old,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 5305,
+        //    Credit = 3,
+        //    GPACredit = 3
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 54,
+        //    Semester = 5,
+        //    Name = "Fundamentals of Multimedia",
+        //    Syllabus = Syllabus.Old,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 5405,
+        //    Credit = 3,
+        //    GPACredit = 3
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 55,
+        //    Semester = 5,
+        //    Name = "Fundamentals of Management",
+        //    Syllabus = Syllabus.Old,
+        //    SubjectModifier = SubjectModifier.EN,
+        //    Code = 5101,
+        //    Credit = 2,
+        //    GPACredit = 0
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 56,
+        //    Semester = 6,
+        //    Name = "Software Development Project",
+        //    Syllabus = Syllabus.Old,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 6105,
+        //    Credit = 8,
+        //    GPACredit = 8
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 57,
+        //    Semester = 6,
+        //    Name = "System and Network Administration",
+        //    Syllabus = Syllabus.Old,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 6205,
+        //    Credit = 3,
+        //    GPACredit = 3
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 58,
+        //    Semester = 6,
+        //    Name = "e-Business Application",
+        //    Syllabus = Syllabus.Old,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 6305,
+        //    Credit = 3,
+        //    GPACredit = 3
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 59,
+        //    Semester = 6,
+        //    Name = "Database Systems II",
+        //    Syllabus = Syllabus.Old,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 6405,
+        //    Credit = 3,
+        //    GPACredit = 3
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 60,
+        //    Semester = 6,
+        //    Name = "Middleware Architecture",
+        //    Syllabus = Syllabus.Old,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 6505,
+        //    Credit = 3,
+        //    GPACredit = 3
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 61,
+        //    Semester = 6,
+        //    Name = "Introduction to Entrepreneurship",
+        //    Syllabus = Syllabus.Old,
+        //    SubjectModifier = SubjectModifier.EN,
+        //    Code = 6502,
+        //    Credit = 2,
+        //    GPACredit = 0
+        //}
+
+        //                new Subject
+        //{
+        //    SubjectID = 61,
+        //    Semester = 3,
+        //    Name = "Object Oriented Analysis & Design (Re Mapping)",
+        //    Syllabus = Syllabus.Mapping_For_New,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 3106,
+        //    Credit = 3,
+        //    GPACredit = 3
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 62,
+        //    Semester = 3,
+        //    Name = "Data Structures and Algorithms (Re Mapping)",
+        //    Syllabus = Syllabus.Mapping_For_New,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 3206,
+        //    Credit = 4,
+        //    GPACredit = 4
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 63,
+        //    Semester = 3,
+        //    Name = "Web Application Development (Re Mapping) II",
+        //    Syllabus = Syllabus.Mapping_For_New,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 3406,
+        //    Credit = 4,
+        //    GPACredit = 4
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 64,
+        //    Semester = 4, // Special case
+        //    Name = "User Experience Design (Re Mapping)",
+        //    Syllabus = Syllabus.Mapping_For_New,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 4106,
+        //    Credit = 3,
+        //    GPACredit = 3
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 65,
+        //    Semester = 4,
+        //    Name = "Information Technology Project Management (Re Mapping)",
+        //    Syllabus = Syllabus.Mapping_For_New,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 4306,
+        //    Credit = 3,
+        //    GPACredit = 3
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 66,
+        //    Semester = 4,
+        //    Name = "Agile Software Development (Re Mapping)",
+        //    Syllabus = Syllabus.Mapping_For_New,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 4406,
+        //    Credit = 4,
+        //    GPACredit = 4
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 67,
+        //    Semester = 4,
+        //    Name = "Computer Networks (Re Mapping)",
+        //    Syllabus = Syllabus.Mapping_For_New,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 4506,
+        //    Credit = 3,
+        //    GPACredit = 3
+        //},
+
+        // new Subject
+        //{
+        //    SubjectID = 68,
+        //    Semester = 6,
+        //    Name = "Software Development Project (Re Mapping)",
+        //    Syllabus = Syllabus.Mapping_For_New,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 5106,
+        //    Credit = 8,
+        //    GPACredit = 8,
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 69,
+        //    Semester = 5,
+        //    Name = "Professional Practice (Re Mapping)",
+        //    Syllabus = Syllabus.Mapping_For_New,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 5206,
+        //    Credit = 3,
+        //    GPACredit = 3,
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 70,
+        //    Semester = 5,
+        //    Name = "Systems & Network Administration (Re Mapping)",
+        //    Syllabus = Syllabus.Mapping_For_New,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 5406,
+        //    Credit = 3,
+        //    GPACredit = 3,
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 71,
+        //    Semester = 5,
+        //    Name = "Principles of Information Security (Re Mapping)",
+        //    Syllabus = Syllabus.Mapping_For_New,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 5306,
+        //    Credit = 3,
+        //    GPACredit = 3,
+        //},
+        //new Subject
+        //{
+        //    SubjectID = 72,
+        //    Semester = 6,
+        //    Name = "e-Business Technologies (Re Mapping)",
+        //    Syllabus = Syllabus.Mapping_For_New,
+        //    SubjectModifier = SubjectModifier.IT,
+        //    Code = 6506,
+        //    Credit = 3,
+        //    GPACredit = 3
+        //}

@@ -1,4 +1,8 @@
-﻿using System;
+﻿using GPAPlanner.Model;
+using GPAPlanner.Model.NonRelational;
+using GPAPlanner.Services.Initializors;
+using GPAPlanner.Session;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +27,15 @@ namespace GPAPlanner
         public MainWindow()
         {
             InitializeComponent();
+            AppSession appSession = new();
+            appSession.InitializeSession();
+
+            DataInitializer dataInitializer = new(appSession);
+            dataInitializer.LoadSubjects();
+            DataInitializer.CreateSemesters();
+            DataInitializer.TestData();
+
+
         }
     }
 }
