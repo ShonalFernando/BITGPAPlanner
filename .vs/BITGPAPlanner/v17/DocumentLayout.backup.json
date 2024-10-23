@@ -3,6 +3,150 @@
   "WorkspaceRootPath": "D:\\Source\\Repos\\BITGPAPlanner\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\view\\dialogs\\subjectadder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\view\\dialogs\\subjectadder.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\view\\pages\\calculatorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\view\\pages\\calculatorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\observablemodel\\resultmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\observablemodel\\resultmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10BD4FC5-82D1-4343-ACF4-A4CAF18BC112}|Planner.Model\\Planner.Model.shproj|d:\\source\\repos\\bitgpaplanner\\planner.model\\score.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10BD4FC5-82D1-4343-ACF4-A4CAF18BC112}|Planner.Model\\Planner.Model.shproj|solutionrelative:planner.model\\score.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\viewmodel\\gpacalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\viewmodel\\gpacalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\view\\pages\\subjectsviewer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\view\\pages\\subjectsviewer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\viewmodel\\shellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\viewmodel\\shellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\viewmodel\\subjectsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\viewmodel\\subjectsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10BD4FC5-82D1-4343-ACF4-A4CAF18BC112}|Planner.Model\\Planner.Model.shproj|d:\\source\\repos\\bitgpaplanner\\planner.model\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10BD4FC5-82D1-4343-ACF4-A4CAF18BC112}|Planner.Model\\Planner.Model.shproj|solutionrelative:planner.model\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\viewmodel\\subjectcreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\viewmodel\\subjectcreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\view\\shellwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\view\\shellwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\view\\dialogs\\subjectsloader.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\view\\dialogs\\subjectsloader.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\session\\appsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\session\\appsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\helper\\booleanutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\helper\\booleanutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\view\\pages\\calculatorpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\view\\pages\\calculatorpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\observablemodel\\observablescore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\observablemodel\\observablescore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10BD4FC5-82D1-4343-ACF4-A4CAF18BC112}|Planner.Model\\Planner.Model.shproj|d:\\source\\repos\\bitgpaplanner\\planner.model\\semester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10BD4FC5-82D1-4343-ACF4-A4CAF18BC112}|Planner.Model\\Planner.Model.shproj|solutionrelative:planner.model\\semester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\view\\shellwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\view\\shellwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\view\\dialogs\\subjectsloader.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\view\\dialogs\\subjectsloader.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\view\\dialogs\\subjectadder.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\view\\dialogs\\subjectadder.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\view\\dialogs\\logtester.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\view\\dialogs\\logtester.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\services\\datainitializors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\services\\datainitializors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\helper\\testutlity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\helper\\testutlity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\view\\dialogs\\logtester.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\view\\dialogs\\logtester.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\helper\\objectutlility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\helper\\objectutlility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\helper\\loggin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\helper\\loggin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\view\\pages\\subjectsviewer.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\view\\pages\\subjectsviewer.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|d:\\source\\repos\\bitgpaplanner\\planner.client\\command\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC5B2828-E2C9-4317-B220-FAAF2BD69760}|Planner.Client\\Planner.Client.csproj|solutionrelative:planner.client\\command\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC377EFB-7EE0-4B60-A752-01382A208E22}|UnitTester\\UnitTester.csproj|d:\\source\\repos\\bitgpaplanner\\unittester\\session\\appsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC377EFB-7EE0-4B60-A752-01382A208E22}|UnitTester\\UnitTester.csproj|solutionrelative:unittester\\session\\appsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC377EFB-7EE0-4B60-A752-01382A208E22}|UnitTester\\UnitTester.csproj|d:\\source\\repos\\bitgpaplanner\\unittester\\services\\subjectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC377EFB-7EE0-4B60-A752-01382A208E22}|UnitTester\\UnitTester.csproj|solutionrelative:unittester\\services\\subjectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC377EFB-7EE0-4B60-A752-01382A208E22}|UnitTester\\UnitTester.csproj|d:\\source\\repos\\bitgpaplanner\\unittester\\view\\viewpainter\\subjectsviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC377EFB-7EE0-4B60-A752-01382A208E22}|UnitTester\\UnitTester.csproj|solutionrelative:unittester\\view\\viewpainter\\subjectsviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC377EFB-7EE0-4B60-A752-01382A208E22}|UnitTester\\UnitTester.csproj|d:\\source\\repos\\bitgpaplanner\\unittester\\view\\viewpainter\\menupainter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC377EFB-7EE0-4B60-A752-01382A208E22}|UnitTester\\UnitTester.csproj|solutionrelative:unittester\\view\\viewpainter\\menupainter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC377EFB-7EE0-4B60-A752-01382A208E22}|UnitTester\\UnitTester.csproj|d:\\source\\repos\\bitgpaplanner\\unittester\\unittester.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FC377EFB-7EE0-4B60-A752-01382A208E22}|UnitTester\\UnitTester.csproj|solutionrelative:unittester\\unittester.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FC377EFB-7EE0-4B60-A752-01382A208E22}|UnitTester\\UnitTester.csproj|d:\\source\\repos\\bitgpaplanner\\unittester\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC377EFB-7EE0-4B60-A752-01382A208E22}|UnitTester\\UnitTester.csproj|solutionrelative:unittester\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,20 +158,462 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ShellController.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\ViewModel\\ShellController.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\ViewModel\\ShellController.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\ViewModel\\ShellController.cs",
+              "RelativeToolTip": "Planner.Client\\ViewModel\\ShellController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T07:08:20.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Subject.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Model\\Subject.cs",
+              "RelativeDocumentMoniker": "Planner.Model\\Subject.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Model\\Subject.cs",
+              "RelativeToolTip": "Planner.Model\\Subject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T12:02:39.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Score.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Model\\Score.cs",
+              "RelativeDocumentMoniker": "Planner.Model\\Score.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Model\\Score.cs",
+              "RelativeToolTip": "Planner.Model\\Score.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T12:01:49.589Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SubjectAdder.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Dialogs\\SubjectAdder.xaml",
+              "RelativeDocumentMoniker": "Planner.Client\\View\\Dialogs\\SubjectAdder.xaml",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Dialogs\\SubjectAdder.xaml",
+              "RelativeToolTip": "Planner.Client\\View\\Dialogs\\SubjectAdder.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-11T12:42:34.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GPACalculator.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\ViewModel\\GPACalculator.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\ViewModel\\GPACalculator.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\ViewModel\\GPACalculator.cs",
+              "RelativeToolTip": "Planner.Client\\ViewModel\\GPACalculator.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAD8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T18:49:45.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalculatorPage.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Pages\\CalculatorPage.xaml",
+              "RelativeDocumentMoniker": "Planner.Client\\View\\Pages\\CalculatorPage.xaml",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Pages\\CalculatorPage.xaml",
+              "RelativeToolTip": "Planner.Client\\View\\Pages\\CalculatorPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-13T18:08:46.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SubjectsViewer.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Pages\\SubjectsViewer.xaml",
+              "RelativeDocumentMoniker": "Planner.Client\\View\\Pages\\SubjectsViewer.xaml",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Pages\\SubjectsViewer.xaml",
+              "RelativeToolTip": "Planner.Client\\View\\Pages\\SubjectsViewer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-11T08:45:26.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResultMap.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\ObservableModel\\ResultMap.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\ObservableModel\\ResultMap.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\ObservableModel\\ResultMap.cs",
+              "RelativeToolTip": "Planner.Client\\ObservableModel\\ResultMap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T10:32:58.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SubjectsManager.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\ViewModel\\SubjectsManager.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\ViewModel\\SubjectsManager.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\ViewModel\\SubjectsManager.cs",
+              "RelativeToolTip": "Planner.Client\\ViewModel\\SubjectsManager.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T05:54:19.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SubjectCreator.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\ViewModel\\SubjectCreator.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\ViewModel\\SubjectCreator.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\ViewModel\\SubjectCreator.cs",
+              "RelativeToolTip": "Planner.Client\\ViewModel\\SubjectCreator.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAAAI4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T13:36:28.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ShellWindow.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\ShellWindow.xaml",
+              "RelativeDocumentMoniker": "Planner.Client\\View\\ShellWindow.xaml",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\ShellWindow.xaml",
+              "RelativeToolTip": "Planner.Client\\View\\ShellWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-10T12:06:29.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SubjectsLoader.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Dialogs\\SubjectsLoader.xaml",
+              "RelativeDocumentMoniker": "Planner.Client\\View\\Dialogs\\SubjectsLoader.xaml",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Dialogs\\SubjectsLoader.xaml",
+              "RelativeToolTip": "Planner.Client\\View\\Dialogs\\SubjectsLoader.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-13T09:22:00.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppSession.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\Session\\AppSession.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\Session\\AppSession.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\Session\\AppSession.cs",
+              "RelativeToolTip": "Planner.Client\\Session\\AppSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T06:14:17.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CalculatorPage.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Pages\\CalculatorPage.xaml.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\View\\Pages\\CalculatorPage.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Pages\\CalculatorPage.xaml.cs",
+              "RelativeToolTip": "Planner.Client\\View\\Pages\\CalculatorPage.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T18:53:45.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BooleanUtilities.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\Helper\\BooleanUtilities.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\Helper\\BooleanUtilities.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\Helper\\BooleanUtilities.cs",
+              "RelativeToolTip": "Planner.Client\\Helper\\BooleanUtilities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:04:36.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\ViewModel\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\ViewModel\\ViewModelBase.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\ViewModel\\ViewModelBase.cs",
+              "RelativeToolTip": "Planner.Client\\ViewModel\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T06:02:40.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ObservableScore.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\ObservableModel\\ObservableScore.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\ObservableModel\\ObservableScore.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\ObservableModel\\ObservableScore.cs",
+              "RelativeToolTip": "Planner.Client\\ObservableModel\\ObservableScore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T18:42:36.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Semester.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Model\\Semester.cs",
+              "RelativeDocumentMoniker": "Planner.Model\\Semester.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Model\\Semester.cs",
+              "RelativeToolTip": "Planner.Model\\Semester.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T18:41:36.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ShellWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\ShellWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\View\\ShellWindow.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\ShellWindow.xaml.cs",
+              "RelativeToolTip": "Planner.Client\\View\\ShellWindow.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAB4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T12:11:00.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SubjectsLoader.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Dialogs\\SubjectsLoader.xaml.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\View\\Dialogs\\SubjectsLoader.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Dialogs\\SubjectsLoader.xaml.cs",
+              "RelativeToolTip": "Planner.Client\\View\\Dialogs\\SubjectsLoader.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T09:24:09.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SubjectAdder.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Dialogs\\SubjectAdder.xaml.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\View\\Dialogs\\SubjectAdder.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Dialogs\\SubjectAdder.xaml.cs",
+              "RelativeToolTip": "Planner.Client\\View\\Dialogs\\SubjectAdder.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T15:45:31.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LogTester.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Dialogs\\LogTester.xaml",
+              "RelativeDocumentMoniker": "Planner.Client\\View\\Dialogs\\LogTester.xaml",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Dialogs\\LogTester.xaml",
+              "RelativeToolTip": "Planner.Client\\View\\Dialogs\\LogTester.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-13T06:29:42.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DataInitializors.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\Services\\DataInitializors.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\Services\\DataInitializors.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\Services\\DataInitializors.cs",
+              "RelativeToolTip": "Planner.Client\\Services\\DataInitializors.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T07:09:45.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\App.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\App.xaml.cs",
+              "RelativeToolTip": "Planner.Client\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T07:03:54.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LogTester.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Dialogs\\LogTester.xaml.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\View\\Dialogs\\LogTester.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Dialogs\\LogTester.xaml.cs",
+              "RelativeToolTip": "Planner.Client\\View\\Dialogs\\LogTester.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T06:30:40.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TestUtlity.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\Helper\\TestUtlity.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\Helper\\TestUtlity.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\Helper\\TestUtlity.cs",
+              "RelativeToolTip": "Planner.Client\\Helper\\TestUtlity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T06:10:13.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\App.xaml",
+              "RelativeDocumentMoniker": "Planner.Client\\App.xaml",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\App.xaml",
+              "RelativeToolTip": "Planner.Client\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-10T12:08:49.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ObjectUtlility.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\Helper\\ObjectUtlility.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\Helper\\ObjectUtlility.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\Helper\\ObjectUtlility.cs",
+              "RelativeToolTip": "Planner.Client\\Helper\\ObjectUtlility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T06:02:04.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Loggin.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\Helper\\Loggin.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\Helper\\Loggin.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\Helper\\Loggin.cs",
+              "RelativeToolTip": "Planner.Client\\Helper\\Loggin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T06:00:33.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SubjectsViewer.xaml.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Pages\\SubjectsViewer.xaml.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\View\\Pages\\SubjectsViewer.xaml.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\View\\Pages\\SubjectsViewer.xaml.cs",
+              "RelativeToolTip": "Planner.Client\\View\\Pages\\SubjectsViewer.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T06:12:03.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\Command\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Planner.Client\\Command\\RelayCommand.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\Planner.Client\\Command\\RelayCommand.cs",
+              "RelativeToolTip": "Planner.Client\\Command\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T06:03:12.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UnitTester.csproj",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\UnitTester\\UnitTester.csproj",
+              "RelativeDocumentMoniker": "UnitTester\\UnitTester.csproj",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\UnitTester\\UnitTester.csproj",
+              "RelativeToolTip": "UnitTester\\UnitTester.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-10T12:03:13.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SubjectManager.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\UnitTester\\Services\\SubjectManager.cs",
+              "RelativeDocumentMoniker": "UnitTester\\Services\\SubjectManager.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\UnitTester\\Services\\SubjectManager.cs",
+              "RelativeToolTip": "UnitTester\\Services\\SubjectManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T11:46:00.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "SubjectsViewer.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\UnitTester\\View\\ViewPainter\\SubjectsViewer.cs",
+              "RelativeDocumentMoniker": "UnitTester\\View\\ViewPainter\\SubjectsViewer.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\UnitTester\\View\\ViewPainter\\SubjectsViewer.cs",
+              "RelativeToolTip": "UnitTester\\View\\ViewPainter\\SubjectsViewer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T11:40:38.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "MenuPainter.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\UnitTester\\View\\ViewPainter\\MenuPainter.cs",
+              "RelativeDocumentMoniker": "UnitTester\\View\\ViewPainter\\MenuPainter.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\UnitTester\\View\\ViewPainter\\MenuPainter.cs",
+              "RelativeToolTip": "UnitTester\\View\\ViewPainter\\MenuPainter.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAABBwEUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T11:36:48.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AppSession.cs",
+              "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\UnitTester\\Session\\AppSession.cs",
+              "RelativeDocumentMoniker": "UnitTester\\Session\\AppSession.cs",
+              "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\UnitTester\\Session\\AppSession.cs",
+              "RelativeToolTip": "UnitTester\\Session\\AppSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T11:28:23.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Source\\Repos\\BITGPAPlanner\\UnitTester\\Program.cs",
               "RelativeDocumentMoniker": "UnitTester\\Program.cs",
               "ToolTip": "D:\\Source\\Repos\\BITGPAPlanner\\UnitTester\\Program.cs",
               "RelativeToolTip": "UnitTester\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T05:06:02.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T05:06:02.31Z"
             }
           ]
         }

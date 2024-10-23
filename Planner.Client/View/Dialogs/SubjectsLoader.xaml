@@ -1,0 +1,54 @@
+﻿<mah:MetroWindow x:Class="Planner.Client.View.Dialogs.SubjectsLoader"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:Planner.Client.View.Dialogs"
+        mc:Ignorable="d"
+        Title="Subjects Loader" Height="450" Width="270" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="270"/>
+            <ColumnDefinition Width="530"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Background="{DynamicResource MahApps.Brushes.Gray1}" Grid.Column="0" Grid.Row="0">
+            <Button Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Width="270" Height="45" Margin="0,0,0,0" Command="{Binding Goto_SubjectsCommand}" HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal" Width="250">
+                    <Image Source="/Assets/Icons/icons8-open-file-48.png" Width="35" Height="35"/>
+                    <Label Content="From File" Margin="10,0,0,0" Foreground="White" FontSize="16" Width="215"/>
+                </StackPanel>
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Width="270" Height="45" Margin="0,0,0,0" Command="{Binding Goto_CalculatorCommand}" HorizontalAlignment="Left" Click="Button_Click">
+                <StackPanel Orientation="Horizontal" Width="250" >
+                    <Image Source="/Assets/Icons/icons8-library-48.png" Width="35" Height="35"/>
+                    <Label Content="Templates" Margin="10,0,0,0" Foreground="White" FontSize="16" Width="215"/>
+                </StackPanel>
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Width="270" Height="45" Margin="0,0,0,0" Command="{Binding Goto_PlannerCommand}" HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal" Width="250">
+                    <Image Source="/Assets/Icons/icons8-backup-48.png" Width="35" Height="35"/>
+                    <Label Content="Backups" Margin="10,0,0,0" Foreground="White" FontSize="16" Width="215"/>
+                </StackPanel>
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Width="270" Height="45" Margin="0,0,0,0" Command="{Binding Goto_TeachingCommand}" HorizontalAlignment="Left" IsEnabled="False">
+                <StackPanel Orientation="Horizontal" Width="250">
+                    <Image Source="/Assets/Icons/icons8-cloud-backup-restore-48.png" Width="35" Height="35"/>
+                    <Label Content="Cloud" Margin="10,0,0,0" Foreground="White" FontSize="16" Width="215"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+        <ListBox Grid.Column="1" Grid.Row="0" Background="{DynamicResource MahApps.Brushes.Gray2}">
+
+        </ListBox>
+
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Background="{DynamicResource MahApps.Brushes.Accent}"/>
+    </Grid>
+
+</mah:MetroWindow>

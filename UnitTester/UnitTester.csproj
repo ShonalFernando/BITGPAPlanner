@@ -11,4 +11,6 @@
     <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
   </ItemGroup>
 
+  <Import Project="..\Planner.Model\Planner.Model.projitems" Label="Shared" />
+
 </Project>

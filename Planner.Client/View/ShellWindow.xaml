@@ -1,0 +1,65 @@
+﻿<mah:MetroWindow x:Class="Planner.Client.View.ShellWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:Planner.Client.View"
+        mc:Ignorable="d"
+        Title="{Binding AppTitle}" Height="768" Width="1366">
+    
+    <mah:MetroWindow.Flyouts>
+        <mah:FlyoutsControl>
+            <mah:Flyout x:Name="FirstFlyout" Header="{Binding CurrentPageTitle}" Position="Left" Width="250" IsOpen="{Binding IsMenuOpen}">
+                <!-- The content goes here -->
+
+                <StackPanel Margin="0,10,0,0">
+                    <Button Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Width="200" Height="45" Margin="10,0,0,0" Command="{Binding Goto_SubjectsCommand}">
+                        <StackPanel Orientation="Horizontal" Width="250">
+                            <Image Source="/Assets/Icons/icons8-book-48.png" Width="35" Height="35"/>
+                            <Label Content="Subjects" Margin="10,0,0,0" Foreground="White" FontSize="16" Width="215"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Width="200" Height="45" Margin="10,0,0,0" Command="{Binding Goto_CalculatorCommand}">
+                        <StackPanel Orientation="Horizontal" Width="250">
+                            <Image Source="/Assets/Icons/icons8-calculator-48.png" Width="35" Height="35"/>
+                            <Label Content="Calculator" Margin="10,0,0,0" Foreground="White" FontSize="16" Width="215"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Width="200" Height="45" Margin="10,0,0,0" Command="{Binding Goto_PlannerCommand}">
+                        <StackPanel Orientation="Horizontal" Width="250">
+                            <Image Source="/Assets/Icons/icons8-planner-50.png" Width="35" Height="35"/>
+                            <Label Content="Planner" Margin="10,0,0,0" Foreground="White" FontSize="16" Width="215"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Width="200" Height="45" Margin="10,0,0,0" Command="{Binding Goto_TeachingCommand}">
+                        <StackPanel Orientation="Horizontal" Width="250">
+                            <Image Source="/Assets/Icons/icons8-teaching-50.png" Width="35" Height="35"/>
+                            <Label Content="STXT" Margin="10,0,0,0" Foreground="White" FontSize="16" Width="215"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </mah:Flyout>
+        </mah:FlyoutsControl>
+    </mah:MetroWindow.Flyouts>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Background="{DynamicResource MahApps.Brushes.Accent}" Orientation="Horizontal">
+            <Button Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Width="45" Height="45" Margin="10,0,0,0" Command="{Binding OpenMenuCommand}">
+                <Image Source="/Assets/Icons/icons8-menu-48.png" Width="35" Height="35"/>
+            </Button>
+        </StackPanel>
+
+        <Frame x:Name="MainFrame" Grid.Row="1"/>
+
+        <StatusBar Grid.Row="2" Background="{DynamicResource MahApps.Brushes.Accent2}">
+
+        </StatusBar>
+    </Grid>
+</mah:MetroWindow>
