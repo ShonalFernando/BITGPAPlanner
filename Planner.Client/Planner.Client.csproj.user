@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\Auxillary\SplashScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Dialogs\LogTester.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,6 +22,9 @@
     <Compile Update="View\Pages\CalculatorPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Pages\PlannerView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Pages\SubjectsViewer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -27,6 +33,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="View\Auxillary\SplashScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\Dialogs\LogTester.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -37,6 +46,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Pages\CalculatorPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Pages\PlannerView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Pages\SubjectsViewer.xaml">

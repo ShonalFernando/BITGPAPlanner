@@ -18,5 +18,9 @@ namespace Planner.Client.ObservableModel
         public bool     Enhancement     { get; set; }
 
         public Grade    GradeObtained   { get; set; }
+        public string   GradeDisplayed  { get; set; } = null!;
+        public int      Credits         { get; set; }
+
+        public decimal  Weight          { get; set; }
     }
 }

@@ -122,3 +122,15 @@ D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\Ico
 D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\Icons\icons8-open-file-48.png
 D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Pages\CalculatorPage.g.cs
 D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Pages\CalculatorPage.baml
+D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\InterfaceIcons\icons8-calculator-64.png
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\InterfaceIcons\icons8-remove-64.png
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\InterfaceIcons\icons8-reset-64.png
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\InterfaceIcons\icons8-save-64.png
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\InterfaceIcons\icons8-create-document-64.png
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\InterfaceIcons\icons8-edit-64.png
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\InterfaceIcons\icons8-opened-folder-64.png
+D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Pages\PlannerView.g.cs
+D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Pages\PlannerView.baml
+D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Auxillary\SplashScreen.g.cs
+D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Auxillary\SplashScreen.baml

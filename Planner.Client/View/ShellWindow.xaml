@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:Planner.Client.View"
+        xmlns:behav="clr-namespace:Planner.Client.Behaviours"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
         Title="{Binding AppTitle}" Height="768" Width="1366">
-    
+
     <mah:MetroWindow.Flyouts>
         <mah:FlyoutsControl>
             <mah:Flyout x:Name="FirstFlyout" Header="{Binding CurrentPageTitle}" Position="Left" Width="250" IsOpen="{Binding IsMenuOpen}">
@@ -42,24 +44,47 @@
             </mah:Flyout>
         </mah:FlyoutsControl>
     </mah:MetroWindow.Flyouts>
-    
+
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="25"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Background="{DynamicResource MahApps.Brushes.Accent}">
+            <Button Style="{DynamicResource MahApps.Styles.Button.MetroWindow.Base}" Command="{Binding OpenMenuCommand}"
+                Width="80" Height="25"  Background="#FF3393DF" Foreground="White" Content="Home">
 
-        <StackPanel Background="{DynamicResource MahApps.Brushes.Accent}" Orientation="Horizontal">
-            <Button Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Width="45" Height="45" Margin="10,0,0,0" Command="{Binding OpenMenuCommand}">
-                <Image Source="/Assets/Icons/icons8-menu-48.png" Width="35" Height="35"/>
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.MetroWindow.Base}" 
+                Width="80" Height="25" Background="#FF3393DF" Foreground="White" Content="Calculator" Command="{Binding Goto_CalculatorCommand}">
+                <i:Interaction.Behaviors>
+                    <behav:ButtonHighlighter SelectedBackground="White" SelectedForeground="{DynamicResource MahApps.Brushes.Gray1}" IsDefault="True"/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.MetroWindow.Base}" Command="{Binding Goto_SubjectsCommand}" 
+                Width="80" Height="25" Background="#FF3393DF" Foreground="White" Content="Subjects" >
+                <i:Interaction.Behaviors>
+                    <behav:ButtonHighlighter SelectedBackground="White" SelectedForeground="{DynamicResource MahApps.Brushes.Gray1}"/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.MetroWindow.Base}" 
+                Width="80" Height="25" Background="#FF3393DF" Foreground="White" Content="Planner" >
+                <i:Interaction.Behaviors>
+                    <behav:ButtonHighlighter SelectedBackground="White" SelectedForeground="{DynamicResource MahApps.Brushes.Gray1}"/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.MetroWindow.Base}" 
+                Width="80" Height="25"  Background="#FF3393DF" Foreground="White" Content="STXT" >
+                <i:Interaction.Behaviors>
+                    <behav:ButtonHighlighter SelectedBackground="White" SelectedForeground="{DynamicResource MahApps.Brushes.Gray1}"/>
+                </i:Interaction.Behaviors>
             </Button>
         </StackPanel>
 
-        <Frame x:Name="MainFrame" Grid.Row="1"/>
-
-        <StatusBar Grid.Row="2" Background="{DynamicResource MahApps.Brushes.Accent2}">
-
-        </StatusBar>
+        
+        
+        <mah:TransitioningContentControl x:Name="PageFrameHolder" Grid.Row="1"  Transition="Left" >
+            <Frame Content="{Binding CurrentPage}" NavigationUIVisibility="Hidden"/>
+        </mah:TransitioningContentControl>
     </Grid>
 </mah:MetroWindow>

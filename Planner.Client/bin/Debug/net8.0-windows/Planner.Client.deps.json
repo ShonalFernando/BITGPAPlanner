@@ -11,6 +11,7 @@
           "MahApps.Metro": "2.4.10",
           "MahApps.Metro.IconPacks": "5.0.0",
           "Microsoft.Data.Sqlite": "8.0.10",
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.135",
           "System.Data.SQLite": "1.0.119"
         },
         "runtime": {
@@ -19,7 +20,7 @@
       },
       "ControlzEx/4.4.0": {
         "dependencies": {
-          "Microsoft.Xaml.Behaviors.Wpf": "1.1.19",
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.135",
           "System.Text.Json": "8.0.3"
         },
         "runtime": {
@@ -548,11 +549,11 @@
           "Microsoft.NETCore.Platforms": "3.1.0"
         }
       },
-      "Microsoft.Xaml.Behaviors.Wpf/1.1.19": {
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.135": {
         "runtime": {
-          "lib/netcoreapp3.0/Microsoft.Xaml.Behaviors.dll": {
+          "lib/net6.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
             "assemblyVersion": "1.1.0.0",
-            "fileVersion": "1.1.19.35512"
+            "fileVersion": "1.1.135.29210"
           }
         }
       },
@@ -1184,12 +1185,12 @@
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
     },
-    "Microsoft.Xaml.Behaviors.Wpf/1.1.19": {
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.135": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5sPWkbqImc2t1aQwIfJcKsUo7tOg1Tr8+6xVzZJB56Nzt4u9NlpcLofgdX/aRYpPKdWDA3U23Akw1KQzU5e82g==",
-      "path": "microsoft.xaml.behaviors.wpf/1.1.19",
-      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512"
+      "sha512": "sha512-r8qBEXmQfORso2+MVHnt8PSH4761zJ0SIxgQTSEDVLU97EN2FZdG6/ZCYUPhQy+OrPKgnpYBCAs3PS6Bs7wRsg==",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.135",
+      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.135.nupkg.sha512"
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",

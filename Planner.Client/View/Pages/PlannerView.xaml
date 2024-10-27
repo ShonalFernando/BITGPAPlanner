@@ -1,0 +1,99 @@
+﻿<Page x:Class="Planner.Client.View.Pages.PlannerView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      xmlns:local="clr-namespace:Planner.Client.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1300"
+      Title="PlannerView">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="250"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" Background="{DynamicResource MahApps.Brushes.Gray1}">
+            <Label Content="Assign Subject" VerticalAlignment="Center" FontSize="28" FontFamily="Segoe UI Semilight" Foreground="White" />
+
+            <!-- Subject Code -->
+            <Label Content="Subject" VerticalAlignment="Center" Foreground="White" />
+            <ComboBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+         ItemsSource="{Binding Subjects}" 
+         DisplayMemberPath="SubjectName" 
+         SelectedItem="{Binding SelectedSubject, Mode=TwoWay}" />
+
+            <!-- GPA Credits -->
+            <Label Content="Result" Grid.Row="4" VerticalAlignment="Center" Margin="0,0,0,0" Foreground="White"/>
+            <ComboBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" ItemsSource="{Binding Grades}"
+         SelectedItem="{Binding SelectedSubjectGrade, Mode=TwoWay}"/>
+
+            <mah:ToggleSwitch Content="Repeat?" Width="230" HorizontalAlignment="Left" Margin="5,10,5,0" Foreground="White" IsOn="{Binding IsRepeat}"/>
+
+            <mah:ToggleSwitch Content="Enhancement?" Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" Foreground="White" IsOn="{Binding IsEnhancement}"/>
+
+            <Button Style="{DynamicResource MahApps.Styles.Button.Flat}" Content="Add"  Width="100" Margin="0,20,15,0" HorizontalAlignment="Right" Command="{Binding AddCommand}"/>
+
+            <Separator Margin="10" />
+
+            <Label Content="Filters" VerticalAlignment="Center" FontSize="28" FontFamily="Segoe UI Semilight" Foreground="White" />
+
+            <!-- Subject Code -->
+            <Label Content="Level" VerticalAlignment="Center" Foreground="White" />
+            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+        Text="{Binding FilterYear, Mode=TwoWay}"/>
+
+            <!-- GPA Credits -->
+            <mah:ToggleSwitch Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" Foreground="White" Content="All Years" IsOn="{Binding IsAllYears}"/>
+
+
+            <Button Style="{DynamicResource MahApps.Styles.Button.Flat}" Content="Set"  Width="100" Margin="0,20,15,0" HorizontalAlignment="Right" Command="{Binding ResetFiltersCommand}"/>
+
+
+        </StackPanel>
+
+
+        <DataGrid Grid.Row="1" Grid.Column="0"
+              
+             ItemsSource="{Binding DisplayedScores}" 
+             AutoGenerateColumns="True"
+             SelectedItem="{Binding SelectedSubject, Mode=TwoWay}" 
+             HorizontalAlignment="Stretch"
+             />
+
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Background="#FFD6E9F9" Orientation="Horizontal">
+            <Button Margin="5,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding CalculateCommand}" Background="#19D5D5D5">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Assets/InterfaceIcons/icons8-calculator-64.png" Width="32" Height="32" />
+                    <TextBlock Text=" Calculate" FontSize="12" />
+                </StackPanel>
+            </Button>
+            <Separator Background="#7FA9A9A9" Margin="0,5,0,5" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+            <Button Margin="1,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding RemoveCommand}" Background="#19D5D5D5">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Assets/InterfaceIcons/icons8-remove-64.png" Width="32" Height="32" />
+                    <TextBlock Text=" Remove" FontSize="12" />
+                </StackPanel>
+            </Button>
+            <Button Margin="1,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding ResetFiltersCommand}" Background="#19D5D5D5">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Assets/InterfaceIcons/icons8-reset-64.png" Width="32" Height="32" />
+                    <TextBlock Text=" Reset " FontSize="12" />
+                </StackPanel>
+            </Button>
+            <Button Margin="1,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding SaveCommand}" Background="#19D5D5D5">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Assets/InterfaceIcons/icons8-save-64.png" Width="32" Height="32" />
+                    <TextBlock Text=" Save " FontSize="12" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -28,13 +28,13 @@ namespace Planner.Client.View
         public ShellWindow()
         {
             InitializeComponent();
-            CalculatorPage _addSubject = new();
-            MainFrame.Content = _addSubject;
 
             ShellController ShellController = new();
             DataContext = ShellController;
 
             TestUtlity.ExecuteProductionCode(() => { DataInitializors.InitializeDatabase(); });
+
+            PageFrameHolder.ReloadTransition();
         }
     }
 }

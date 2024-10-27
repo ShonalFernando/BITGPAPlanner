@@ -1,5 +1,7 @@
-﻿using Planner.Client.Command;
+﻿using Microsoft.Toolkit.Uwp.Notifications;
+using Planner.Client.Command;
 using Planner.Client.Helper;
+using Planner.Client.View.Pages;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -18,6 +20,9 @@ namespace Planner.Client.ViewModel
         private bool isMenuOpen;
         private string currentPageTitle = "";
         private string appTitle = "GPA Planner | V 1.0";
+
+        private Dictionary<string, object> PageDefintions;
+        private object currentPage;
 
         // Properties
         public bool IsMenuOpen
@@ -45,6 +50,15 @@ namespace Planner.Client.ViewModel
             get => appTitle;
         }
 
+        public object CurrentPage
+        {
+            get => currentPage;
+            set
+            {
+                currentPage = value;
+                OnPropertyChanged();
+            }
+        }
 
         // Commands
         public ICommand OpenMenuCommand { get; }
@@ -63,57 +77,56 @@ namespace Planner.Client.ViewModel
             OpenMenuCommand = new RelayCommand(OpenMenu);
 
             // UI GoTo Commands
-            Goto_SubjectsCommand = new RelayCommand(GotoSubjects);
-            Goto_CalculatorCommand = new RelayCommand(GotoCalculator);
-            Goto_PlannerCommand = new RelayCommand(GotoPlanner);
-            Goto_TeachingCommand = new RelayCommand(GotoTeaching);
+            Goto_SubjectsCommand = new RelayCommand(_ => Goto("Subjects"));
+            Goto_CalculatorCommand = new RelayCommand(_ => Goto("Calculator"));
+            Goto_PlannerCommand = new RelayCommand(_ => Goto("Planner"));
+            Goto_TeachingCommand = new RelayCommand(_ => Goto("STXT"));
 
+            // Load Pages
+            PageDefintions = new Dictionary<string, object>();
+            PageDefintions.Add("Calculator", new CalculatorPage());
+            PageDefintions.Add("Subjects", new SubjectsViewer());
+            PageDefintions.Add("Planner", new SubjectsViewer());
+            PageDefintions.Add("STXT", new SubjectsViewer());
+
+            // Load Current Page
+            currentPage = CurrentPage = PageDefintions["Calculator"];
 
             // UI StartUp Operations
             CurrentPageTitle = "» Subjects";
         }
 
-        private void GotoSubjects(object? parameter)
+        private void Goto (string pageName)
         {
-
-
-            // UI Alter Operations
-            CurrentPageTitle = "» Subjects";
-            OpenMenu(new object());
+            // Check if user navigates to the same page
+            if (CurrentPage != PageDefintions[pageName])
+            {
+                // Get the Page from the Page dictionary
+                CurrentPageTitle = $"» {pageName}";
+                CurrentPage = PageDefintions[pageName];
+                
+                // Reload Transition
+                var contentPresenter = Application.Current.MainWindow.FindName("PageFrameHolder") as MahApps.Metro.Controls.TransitioningContentControl;
+                contentPresenter?.ReloadTransition(); 
+            }
+            
+            // Close the menu if opened
+            CloseMenu();
         }
-
-        private void GotoPlanner(object? parameter)
-        {
-
-
-            // UI Alter Operations
-            CurrentPageTitle = "» Planner";
-            OpenMenu(new object());
-        }
-
-        private void GotoCalculator(object? parameter)
-        {
-
-
-            // UI Alter Operations
-            CurrentPageTitle = "» Calculator";
-            OpenMenu(new object());
-        }
-
-        private void GotoTeaching(object? parameter)
-        {
-
-
-            // UI Alter Operations
-            CurrentPageTitle = "» STXT";
-            OpenMenu(new object());
-        }
-
 
         // Methords
         private void OpenMenu(object? parameter)
         {
-            IsMenuOpen = BooleanUtilities.Toggle(IsMenuOpen);
+            IsMenuOpen = true;
         }
+
+        private void CloseMenu()
+        {
+            if(IsMenuOpen)
+            {
+                IsMenuOpen = false;
+            }
+        }
+
     }
 }

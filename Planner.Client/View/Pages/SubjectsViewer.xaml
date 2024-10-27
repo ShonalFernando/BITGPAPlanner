@@ -3,26 +3,100 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
       xmlns:local="clr-namespace:Planner.Client.View.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="1200"
       Title="SubjectsViewer">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
+
         
-        <StackPanel Orientation="Horizontal" Height="40" Background="{DynamicResource MahApps.Brushes.Accent}"  Grid.Row="1">
-            <Button Margin="5" Content="Load..." Width="150" HorizontalAlignment="Right" Style="{DynamicResource MahApps.Styles.Button.Flat}" Command="{Binding OpenDialogCommand}"/>
-            <Button Margin="5" Content="Create..." Width="150" HorizontalAlignment="Right" Style="{DynamicResource MahApps.Styles.Button.Flat}" Command="{Binding CreateCommand}"/>
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Background="#FFD6E9F9" Orientation="Horizontal">
+            <Button Margin="5,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding CalculateCommand}" Background="#19D5D5D5">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Assets/InterfaceIcons/icons8-create-document-64.png" Width="32" Height="32" />
+                    <TextBlock Text=" Create" FontSize="12" />
+                </StackPanel>
+            </Button>
+            <Button Margin="5,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding CalculateCommand}" Background="#19D5D5D5">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Assets/InterfaceIcons/icons8-edit-64.png" Width="32" Height="32" />
+                    <TextBlock Text=" Edit " FontSize="12" />
+                </StackPanel>
+            </Button>
+            <Button Margin="1,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding RemoveCommand}" Background="#19D5D5D5">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Assets/InterfaceIcons/icons8-remove-64.png" Width="32" Height="32" />
+                    <TextBlock Text=" Remove" FontSize="12" />
+                </StackPanel>
+            </Button>
+            <Separator Background="#7FA9A9A9" Margin="0,5,0,5" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+            <Button Margin="1,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding ResetFiltersCommand}" Background="#19D5D5D5">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Assets/InterfaceIcons/icons8-opened-folder-64.png" Width="32" Height="32" />
+                    <TextBlock Text=" Open Set " FontSize="12" />
+                </StackPanel>
+            </Button>
+            <Button Margin="1,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding SaveCommand}" Background="#19D5D5D5">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Assets/InterfaceIcons/icons8-save-64.png" Width="32" Height="32" />
+                    <TextBlock Text=" Save " FontSize="12" />
+                </StackPanel>
+            </Button>
         </StackPanel>
 
-        <DataGrid Grid.Row="0" 
+        <DataGrid Grid.Row="1" 
                   ItemsSource="{Binding Subjects}" 
                   AutoGenerateColumns="True"
-                  SelectedItem="{Binding SelectedSubject, Mode=TwoWay}" 
-                  Margin="5" />
+                  SelectedItem="{Binding SelectedSubject, Mode=TwoWay}" Grid.ColumnSpan="2" />
+
+        <StackPanel Grid.Column="1" Grid.Row="1" Background="{DynamicResource MahApps.Brushes.Gray1}">
+            <Label Content="Create Subject" VerticalAlignment="Center" FontSize="28" FontFamily="Segoe UI Semilight" Foreground="White" />
+
+            <!-- Subject Code -->
+            <Label Content="Level" VerticalAlignment="Center" Foreground="White" />
+            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+             Text="{Binding Level, Mode=TwoWay}" />
+
+
+            <!-- Subject Code -->
+            <Label Content="Name" VerticalAlignment="Center" Foreground="White" />
+            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+             Text="{Binding Level, Mode=TwoWay}" />
+
+            <!-- Subject Code -->
+            <Label Content="Code" VerticalAlignment="Center" Foreground="White" />
+            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+             Text="{Binding Level, Mode=TwoWay}" />
+
+            <!-- Subject Code -->
+            <Label Content="Credits" VerticalAlignment="Center" Foreground="White" />
+            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+             Text="{Binding Level, Mode=TwoWay}" />
+
+            <!-- Subject Code -->
+            <Label Content="GPA Credits" VerticalAlignment="Center" Foreground="White" />
+            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+             Text="{Binding Level, Mode=TwoWay}" />
+
+            <!-- Subject Code -->
+            <Label Content="Type" VerticalAlignment="Center" Foreground="White" />
+            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+             Text="{Binding Level, Mode=TwoWay}" />
+
+            <!-- Subject Code -->
+            <Label Content="Description" VerticalAlignment="Center" Foreground="White" />
+            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+             Text="{Binding Level, Mode=TwoWay}" />
+        </StackPanel>
     </Grid>
 </Page>

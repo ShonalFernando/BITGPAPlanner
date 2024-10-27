@@ -1,4 +1,5 @@
 ﻿using Planner.Client.Command;
+using Planner.Client.Definitions;
 using Planner.Client.Helper;
 using Planner.Client.ObservableModel;
 using Planner.Model;
@@ -6,11 +7,13 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using UnitTester.Session;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace Planner.Client.ViewModel
 {
@@ -26,8 +29,16 @@ namespace Planner.Client.ViewModel
         private int levelFilter;
         private bool isAllLevels;
 
+        private bool isRepeat;
+        private bool isEnhancement;
 
         private decimal totalGPA;
+
+        private int index;
+
+        // Filters
+        private int filterYear;
+        private bool isAllYears;
 
         // Commands
         public ICommand AddCommand { get; }
@@ -48,19 +59,23 @@ namespace Planner.Client.ViewModel
             RemoveCommand = new RelayCommand(RemoveSelectedScore, CanRemoveScore);
             ResetCommand = new RelayCommand(ResetDisplayedScores);
 
-            // Mock data load on initialization
-            LoadSubjectsFromDatabase();
+            index = 0;
+
+            _subjects = new ObservableCollection<Subject>(Subject.GetAllSubjects(AppSession.ConnectionString));
         }
 
-        // Load subjects from database (mock implementation)
-        private void LoadSubjectsFromDatabase()
-        {
-            _subjects = new ObservableCollection<Subject>(Subject.GetAllSubjects(AppSession.ConnectionString));
-            // Convert List to ObservableCollection
-        }
 
         // Properties
-        public ObservableCollection<ObservableScore> DisplayedScores => displayedScores;
+        public ObservableCollection<ObservableScore> DisplayedScores
+        {
+            get => displayedScores;
+            set
+            {
+                displayedScores = value;
+                OnPropertyChanged();
+            }
+        }
+
         public Array Grades => Enum.GetValues(typeof(Grade));
 
         // Properties
@@ -124,29 +139,123 @@ namespace Planner.Client.ViewModel
             }
         }
 
+        public bool IsRepeat
+        {
+            get => isRepeat;
+            set
+            {
+                isRepeat = value;
+                OnPropertyChanged();
+            }
+        }        
+        
+        public bool IsEnhancement
+        {
+            get => isEnhancement;
+            set
+            {
+                isEnhancement = value;
+                OnPropertyChanged();
+            }
+        }        
+        
+        public int FilterYear
+        {
+            get => filterYear;
+            set
+            {
+                filterYear = value;
+                OnPropertyChanged();
+            }
+        }        
+        
+        public bool IsAllYears
+        {
+            get => isAllYears;
+            set
+            {
+                isAllYears = value;
+                OnPropertyChanged();
+            }
+        }
         // Methods
 
         // Add a new score
         private void AddScore(object? parameter)
         {
+            index++;
+
             if (SelectedSubject != null)
             {
-                DisplayedScores.Add(new ObservableScore
+                if(isRepeat)
                 {
-                    Code = SelectedSubject.SubjectCode,
-                    Subject = SelectedSubject.SubjectName,
-                    GradeObtained = SelectedSubjectGrade
-                });
+                    if (ScoreDefinitions.GetGPV(SelectedSubjectGrade) > 2.00m)
+                    {
+                        DisplayedScores.Add(new ObservableScore
+                        {
+                            Code = SelectedSubject.SubjectCode,
+                            Subject = SelectedSubject.SubjectName,
+                            GradeObtained = SelectedSubjectGrade,
+                            GradeDisplayed = ScoreDefinitions.GetGPVName(SelectedSubjectGrade),
+                            Repeat = IsRepeat,
+                            Enhancement = IsEnhancement,
+                            Credits = SelectedSubject.Credits,
+                            Weight = 2 * SelectedSubject.Credits,
+                            Index = index
+                        });
+                    }
+                    else
+                    {
+                        DisplayedScores.Add(new ObservableScore
+                        {
+                            Code = SelectedSubject.SubjectCode,
+                            Subject = SelectedSubject.SubjectName,
+                            GradeObtained = SelectedSubjectGrade,
+                            GradeDisplayed = ScoreDefinitions.GetGPVName(SelectedSubjectGrade),
+                            Repeat = IsRepeat,
+                            Enhancement = IsEnhancement,
+                            Credits = SelectedSubject.Credits,
+                            Weight = ScoreDefinitions.GetGPV(SelectedSubjectGrade) * SelectedSubject.Credits,
+                            Index = index
+                        });
+                    }
+                }
+                else
+                {
+                    DisplayedScores.Add(new ObservableScore
+                    {
+                        Code = SelectedSubject.SubjectCode,
+                        Subject = SelectedSubject.SubjectName,
+                        GradeObtained = SelectedSubjectGrade,
+                        GradeDisplayed = ScoreDefinitions.GetGPVName(SelectedSubjectGrade),
+                        Repeat = IsRepeat,
+                        Enhancement = IsEnhancement,
+                        Credits = SelectedSubject.Credits,
+                        Weight = ScoreDefinitions.GetGPV(SelectedSubjectGrade) * SelectedSubject.Credits,
+                        Index = index
+                    });
+                }
+
             }
         }
 
         // Calculate GPA
         private void CalculateGPA(object? parameter)
         {
-            //var totalCredits = DisplayedScores.Sum(s => s.GradeObtained.GetCredits());
-            //var totalWeightedGrade = DisplayedScores.Sum(s => s.GradeObtained.GetCredits() * s.GradeObtained.GetGradePoint());
+            int NonenhancementCount = 0;
+            TotalGPA = 0;
 
-            //TotalGPA = totalCredits == 0 ? 0 : totalWeightedGrade / totalCredits;
+            foreach (var score in DisplayedScores)
+            {
+                if(!score.Enhancement)
+                {
+                    TotalGPA += score.Weight;
+                    NonenhancementCount++;
+                }
+                
+            }
+
+            TotalGPA = TotalGPA / NonenhancementCount;
         }
 
         // Validator for Calculate
@@ -176,10 +285,23 @@ namespace Planner.Client.ViewModel
         // Reset filters
         private void ResetFilters(object? parameter)
         { 
-            // TEST 0002
-            TestUtlity.ExecuteTestCode(() => MessageBox.Show(SelectedSubject.SubjectName));
-            LevelFilter = 0;
-            IsAllLevels = true;
+            if(IsAllYears)
+            {
+                Subjects = new ObservableCollection<Subject>(Subject.GetAllSubjects(AppSession.ConnectionString));
+            }
+            else
+            {
+                Subjects = new ObservableCollection<Subject>(Subject.GetAllSubjects(AppSession.ConnectionString).FindAll(sub => sub.Level.Equals(FilterYear)));
+                
+                if(Subjects == null || Subjects.Count == 0)
+                {
+                    MessageBox.Show("No Subjects found for the selected year", "GPA Calculator", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    Subjects = new ObservableCollection<Subject>(Subject.GetAllSubjects(AppSession.ConnectionString));
+                    IsAllYears = true;
+                    FilterYear = 1;
+                }
+            }
+            
         }
 
         // Reset the list of displayed scores

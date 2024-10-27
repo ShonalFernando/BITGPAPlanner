@@ -17,5 +17,12 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/icons/icons8-open-file-48.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/icons/icons8-planner-50.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/icons/icons8-teaching-50.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/interfaceicons/icons8-calculator-64.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/interfaceicons/icons8-create-document-64.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/interfaceicons/icons8-edit-64.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/interfaceicons/icons8-opened-folder-64.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/interfaceicons/icons8-remove-64.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/interfaceicons/icons8-reset-64.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/interfaceicons/icons8-save-64.png")]
 
 
