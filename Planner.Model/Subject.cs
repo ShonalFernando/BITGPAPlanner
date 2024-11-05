@@ -107,6 +107,83 @@ namespace Planner.Model
             }
         }
 
+        // Method to update a subject by ID
+        public static void UpdateSubjectById(string connectionString, Subject subject)
+        {
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                using (var transaction = connection.BeginTransaction())
+                {
+                    string query = @"
+                    UPDATE Subjects
+                    SET 
+                        Level = @Level, 
+                        SubjectName = @SubjectName, 
+                        SubjectCode = @SubjectCode, 
+                        Credits = @Credits, 
+                        GPACredits = @GPACredits, 
+                        SubjectType = @SubjectType, 
+                        Description = @Description
+                    WHERE 
+                        SubjectId = @SubjectId;";
+
+                    using (var command = new SQLiteCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Level", subject.Level);
+                        command.Parameters.AddWithValue("@SubjectName", subject.SubjectName);
+                        command.Parameters.AddWithValue("@SubjectCode", subject.SubjectCode);
+                        command.Parameters.AddWithValue("@Credits", subject.Credits);
+                        command.Parameters.AddWithValue("@GPACredits", subject.GPACredits);
+                        command.Parameters.AddWithValue("@SubjectType", subject.SubjectType);
+                        command.Parameters.AddWithValue("@Description", subject.Description ?? (object)DBNull.Value);
+                        command.Parameters.AddWithValue("@SubjectId", subject.SubjectId); // Ensure SubjectId is set
+
+                        command.ExecuteNonQuery();
+                    }
+
+                    transaction.Commit();
+                }
+            }
+        }
+
+        // Method to delete a subject by ID
+        public static void DeleteSubjectById(string connectionString, Subject subject)
+        {
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                using (var transaction = connection.BeginTransaction())
+                {
+                    string query = @"
+            DELETE FROM Subjects
+            WHERE SubjectId = @SubjectId;";
+
+                    using (var command = new SQLiteCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@SubjectId", subject.SubjectId);
+
+                        command.ExecuteNonQuery();
+                    }
+
+                    transaction.Commit();
+                }
+            }
+        }
+
+        // Reset Sequence
+        public static void ResetSubjectIdSequence(string connectionString)
+        {
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                using (var command = new SQLiteCommand("DELETE FROM sqlite_sequence WHERE name = 'Subjects';", connection))
+                {
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
         // Method to read all subjects
         public static List<Subject> GetAllSubjects(string connectionString)
         {

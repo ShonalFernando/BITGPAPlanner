@@ -134,3 +134,6 @@ D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Pages
 D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Pages\PlannerView.baml
 D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Auxillary\SplashScreen.g.cs
 D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Auxillary\SplashScreen.baml
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Microsoft.Toolkit.Uwp.Notifications.dll
+D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Dialogs\PopupDialog.g.cs
+D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Dialogs\PopupDialog.baml

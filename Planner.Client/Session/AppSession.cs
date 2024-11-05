@@ -9,7 +9,7 @@ namespace UnitTester.Session
     public static class AppSession
     {
         public static readonly string ConnectionString = "Data Source=subjects.db;Version=3;";
-        public static readonly bool IsTest = true;
+        public static readonly bool IsTest = false;
         public static readonly bool IsAppFirstRun = false;
     }
 }

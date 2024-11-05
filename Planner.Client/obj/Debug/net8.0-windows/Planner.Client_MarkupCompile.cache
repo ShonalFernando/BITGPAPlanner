@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Source\Repos\BITGPAPlanner\Planner.Client\App.xaml
-8841055919
+9537013304
 16-963900419
-30-297302211
+32-1024393963
 2491667728626
-View\Auxillary\SplashScreen.xaml;View\Dialogs\LogTester.xaml;View\Dialogs\SubjectAdder.xaml;View\Dialogs\SubjectsLoader.xaml;View\Pages\CalculatorPage.xaml;View\Pages\PlannerView.xaml;View\Pages\SubjectsViewer.xaml;View\ShellWindow.xaml;
+View\Auxillary\SplashScreen.xaml;View\Dialogs\LogTester.xaml;View\Dialogs\PopupDialog.xaml;View\Dialogs\SubjectAdder.xaml;View\Dialogs\SubjectsLoader.xaml;View\Pages\CalculatorPage.xaml;View\Pages\PlannerView.xaml;View\Pages\SubjectsViewer.xaml;View\ShellWindow.xaml;
 
-True
+False
 

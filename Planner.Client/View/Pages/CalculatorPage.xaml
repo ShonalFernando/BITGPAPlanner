@@ -59,7 +59,7 @@
             
             <Label Content="Total GPA" VerticalAlignment="Center" FontSize="28" FontFamily="Segoe UI Semilight" Foreground="White" />
 
-            <Label Content="{Binding TotalGPA}" VerticalAlignment="Center" FontSize="28" FontFamily="Segoe UI Semilight" Foreground="White" Margin="10,0,0,0"/>
+            <Label Content="{Binding TotalGPA}" VerticalAlignment="Center" FontSize="28" FontFamily="Consolas" Foreground="White" Margin="10,0,0,0"/>
 
         </StackPanel>
 

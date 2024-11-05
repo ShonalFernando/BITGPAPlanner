@@ -115,6 +115,8 @@ namespace Planner.Client.ViewModel
             // Populate the ObservableCollection with all enum values
             SubjectTypes = new ObservableCollection<SubjectType>(
                 Enum.GetValues(typeof(SubjectType)).Cast<SubjectType>());
+
+
         }
 
         // =========================================================== Methods

@@ -21,26 +21,26 @@
 
         
         <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Background="#FFD6E9F9" Orientation="Horizontal">
-            <Button Margin="5,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding CalculateCommand}" Background="#19D5D5D5">
+            <Button Margin="5,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding OpenCreateCommand}" Background="#19D5D5D5">
                 <StackPanel Orientation="Vertical">
                     <Image Source="/Assets/InterfaceIcons/icons8-create-document-64.png" Width="32" Height="32" />
                     <TextBlock Text=" Create" FontSize="12" />
                 </StackPanel>
             </Button>
-            <Button Margin="5,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding CalculateCommand}" Background="#19D5D5D5">
+            <Button Margin="5,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding OpenEditCommand}" Background="#19D5D5D5">
                 <StackPanel Orientation="Vertical">
                     <Image Source="/Assets/InterfaceIcons/icons8-edit-64.png" Width="32" Height="32" />
                     <TextBlock Text=" Edit " FontSize="12" />
                 </StackPanel>
             </Button>
-            <Button Margin="1,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding RemoveCommand}" Background="#19D5D5D5">
+            <Button Margin="1,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding DeleteCommand}" Background="#19D5D5D5">
                 <StackPanel Orientation="Vertical">
                     <Image Source="/Assets/InterfaceIcons/icons8-remove-64.png" Width="32" Height="32" />
                     <TextBlock Text=" Remove" FontSize="12" />
                 </StackPanel>
             </Button>
             <Separator Background="#7FA9A9A9" Margin="0,5,0,5" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
-            <Button Margin="1,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding ResetFiltersCommand}" Background="#19D5D5D5">
+            <Button Margin="1,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding OpenDialogCommand}" Background="#19D5D5D5">
                 <StackPanel Orientation="Vertical">
                     <Image Source="/Assets/InterfaceIcons/icons8-opened-folder-64.png" Width="32" Height="32" />
                     <TextBlock Text=" Open Set " FontSize="12" />
@@ -57,46 +57,96 @@
         <DataGrid Grid.Row="1" 
                   ItemsSource="{Binding Subjects}" 
                   AutoGenerateColumns="True"
+                  IsReadOnly="True"
                   SelectedItem="{Binding SelectedSubject, Mode=TwoWay}" Grid.ColumnSpan="2" />
 
-        <StackPanel Grid.Column="1" Grid.Row="1" Background="{DynamicResource MahApps.Brushes.Gray1}">
+        <!--#region Creator -->
+        <StackPanel Grid.Column="1" Grid.Row="1" Background="{DynamicResource MahApps.Brushes.Gray1}" Visibility="{Binding CreatorVisibility}">
             <Label Content="Create Subject" VerticalAlignment="Center" FontSize="28" FontFamily="Segoe UI Semilight" Foreground="White" />
 
-            <!-- Subject Code -->
+            <!-- Level -->
             <Label Content="Level" VerticalAlignment="Center" Foreground="White" />
             <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
-             Text="{Binding Level, Mode=TwoWay}" />
+         Text="{Binding Level, Mode=TwoWay}" />
 
-
-            <!-- Subject Code -->
+            <!-- Subject Name -->
             <Label Content="Name" VerticalAlignment="Center" Foreground="White" />
             <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
-             Text="{Binding Level, Mode=TwoWay}" />
+         Text="{Binding SubjectName, Mode=TwoWay}" />
 
             <!-- Subject Code -->
             <Label Content="Code" VerticalAlignment="Center" Foreground="White" />
             <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
-             Text="{Binding Level, Mode=TwoWay}" />
+         Text="{Binding SubjectCode, Mode=TwoWay}" />
 
-            <!-- Subject Code -->
+            <!-- Credits -->
             <Label Content="Credits" VerticalAlignment="Center" Foreground="White" />
             <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
-             Text="{Binding Level, Mode=TwoWay}" />
+         Text="{Binding Credits, Mode=TwoWay}" />
 
-            <!-- Subject Code -->
+            <!-- GPA Credits -->
             <Label Content="GPA Credits" VerticalAlignment="Center" Foreground="White" />
             <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
-             Text="{Binding Level, Mode=TwoWay}" />
+         Text="{Binding GPACredits, Mode=TwoWay}" />
 
-            <!-- Subject Code -->
+            <!-- Subject Type -->
             <Label Content="Type" VerticalAlignment="Center" Foreground="White" />
-            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
-             Text="{Binding Level, Mode=TwoWay}" />
+            <ComboBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" ItemsSource="{Binding SubjectTypes}" 
+         SelectedItem="{Binding SubjectType, Mode=TwoWay}" />
 
-            <!-- Subject Code -->
+            <!-- Description -->
             <Label Content="Description" VerticalAlignment="Center" Foreground="White" />
             <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
-             Text="{Binding Level, Mode=TwoWay}" />
+         Text="{Binding Description, Mode=TwoWay}" />
+
+
+            <Button Style="{DynamicResource MahApps.Styles.Button.Flat}" Content="Create"  Width="100" Command="{Binding CreateCommand}" HorizontalAlignment="Right" Margin="0,15,15,0"/>
         </StackPanel>
+        <!--#endregion-->
+
+        <!--#region Editor -->
+        <StackPanel Grid.Column="1" Grid.Row="1" Background="{DynamicResource MahApps.Brushes.Gray1}" Visibility="{Binding EditorVisibility}">
+            <Label Content="Edit Subject" VerticalAlignment="Center" FontSize="28" FontFamily="Segoe UI Semilight" Foreground="White" />
+
+            <!-- Level -->
+            <Label Content="Level" VerticalAlignment="Center" Foreground="White" />
+            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+ Text="{Binding Level, Mode=TwoWay}" />
+
+            <!-- Subject Name -->
+            <Label Content="Name" VerticalAlignment="Center" Foreground="White" />
+            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+ Text="{Binding SubjectName, Mode=TwoWay}" />
+
+            <!-- Subject Code -->
+            <Label Content="Code" VerticalAlignment="Center" Foreground="White" />
+            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+ Text="{Binding SubjectCode, Mode=TwoWay}" />
+
+            <!-- Credits -->
+            <Label Content="Credits" VerticalAlignment="Center" Foreground="White" />
+            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+ Text="{Binding Credits, Mode=TwoWay}" />
+
+            <!-- GPA Credits -->
+            <Label Content="GPA Credits" VerticalAlignment="Center" Foreground="White" />
+            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+ Text="{Binding GPACredits, Mode=TwoWay}" />
+
+            <!-- Subject Type -->
+            <Label Content="Type" VerticalAlignment="Center" Foreground="White" />
+            <ComboBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" ItemsSource="{Binding SubjectTypes}" 
+ SelectedItem="{Binding SubjectType, Mode=TwoWay}" />
+
+            <!-- Description -->
+            <Label Content="Description" VerticalAlignment="Center" Foreground="White" />
+            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
+ Text="{Binding Description, Mode=TwoWay}" />
+
+
+            <Button Style="{DynamicResource MahApps.Styles.Button.Flat}" Content="Update"  Width="100" Command="{Binding EditCommand}" HorizontalAlignment="Right" Margin="0,15,15,0"/>
+        </StackPanel>
+        <!--#endregion-->
+        
     </Grid>
 </Page>
