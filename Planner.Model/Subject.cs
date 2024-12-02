@@ -184,6 +184,7 @@ namespace Planner.Model
             }
         }
 
+
         // Method to read all subjects
         public static List<Subject> GetAllSubjects(string connectionString)
         {
@@ -319,6 +320,8 @@ namespace Planner.Model
             return null;
         }
 
+
+
         // Method to get GPA credits by subject code
         public static int GetGPACreditsByCode(string connectionString, string subjectCode)
         {
@@ -334,6 +337,29 @@ namespace Planner.Model
             }
         }
 
+        // Method to get the list of Subject Codes
+        public static List<string> GetAllSubjectCodes(string connectionString)
+        {
+            List<string> subjectCodes = new List<string>();
+
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT SubjectCode FROM Subjects;";
+                using (var command = new SQLiteCommand(query, connection))
+                {
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            subjectCodes.Add(reader["SubjectCode"].ToString()!);
+                        }
+                    }
+                }
+            }
+
+            return subjectCodes;
+        }
     }
 
     public enum SubjectType

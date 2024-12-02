@@ -54,7 +54,7 @@ namespace Planner.Client.View.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Planner.Client;V1.0.0.0;component/view/pages/subjectsviewer.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Planner.Client;component/view/pages/subjectsviewer.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\View\Pages\SubjectsViewer.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

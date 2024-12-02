@@ -1,12 +1,19 @@
 ﻿
 FD:\Source\Repos\BITGPAPlanner\Planner.Client\App.xaml;;
 FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Auxillary\SplashScreen.xaml;;
+FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Dialogs\DropSelectorDialog.xaml;;
+FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Dialogs\InputDialog.xaml;;
 FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Dialogs\LogTester.xaml;;
+FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Dialogs\PopupDialog.xaml;;
 FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Dialogs\SubjectAdder.xaml;;
 FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Dialogs\SubjectsLoader.xaml;;
 FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Pages\CalculatorPage.xaml;;
+FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Pages\Drawer.xaml;;
 FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Pages\PlannerView.xaml;;
 FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Pages\SubjectsViewer.xaml;;
+FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Pages\VLEViewer.xaml;;
 FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\ShellWindow.xaml;;
-FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Dialogs\PopupDialog.xaml;;
+FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Dialogs\GridSelector.xaml;;
+FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Dialogs\AddResourceDialog.xaml;;
+FD:\Source\Repos\BITGPAPlanner\Planner.Client\View\Pages\ResourcePortal.xaml;;
 

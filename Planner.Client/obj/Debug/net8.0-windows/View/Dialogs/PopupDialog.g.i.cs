@@ -53,7 +53,7 @@ namespace Planner.Client.View.Dialogs {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Planner.Client;V1.0.0.0;component/view/dialogs/popupdialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Planner.Client;component/view/dialogs/popupdialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\View\Dialogs\PopupDialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

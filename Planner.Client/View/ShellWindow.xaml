@@ -79,6 +79,18 @@
                     <behav:ButtonHighlighter SelectedBackground="White" SelectedForeground="{DynamicResource MahApps.Brushes.Gray1}"/>
                 </i:Interaction.Behaviors>
             </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.MetroWindow.Base}" 
+                Width="80" Height="25"  Background="#FF3393DF" Foreground="White" Content="VLE"  Command="{Binding Goto_VLECommand}">
+                <i:Interaction.Behaviors>
+                    <behav:ButtonHighlighter SelectedBackground="White" SelectedForeground="{DynamicResource MahApps.Brushes.Gray1}"/>
+                </i:Interaction.Behaviors>
+            </Button>
+            <Button Style="{DynamicResource MahApps.Styles.Button.MetroWindow.Base}" 
+                Width="80" Height="25"  Background="#FF3393DF" Foreground="White" Content="Drawer"  Command="{Binding Goto_DrawerCommand}">
+                <i:Interaction.Behaviors>
+                    <behav:ButtonHighlighter SelectedBackground="White" SelectedForeground="{DynamicResource MahApps.Brushes.Gray1}"/>
+                </i:Interaction.Behaviors>
+            </Button>
         </StackPanel>
 
         

@@ -10,6 +10,18 @@
     <Compile Update="View\Auxillary\SplashScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Dialogs\AddResourceDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Dialogs\DropSelectorDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Dialogs\GridSelector.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Dialogs\InputDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Dialogs\LogTester.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,10 +37,19 @@
     <Compile Update="View\Pages\CalculatorPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Pages\Drawer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Pages\PlannerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Pages\ResourcePortal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Pages\SubjectsViewer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Pages\VLEViewer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\ShellWindow.xaml.cs">
@@ -37,6 +58,18 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="View\Auxillary\SplashScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Dialogs\AddResourceDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Dialogs\DropSelectorDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Dialogs\GridSelector.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Dialogs\InputDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Dialogs\LogTester.xaml">
@@ -54,10 +87,19 @@
     <Page Update="View\Pages\CalculatorPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\Pages\Drawer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\Pages\PlannerView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\Pages\ResourcePortal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\Pages\SubjectsViewer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Pages\VLEViewer.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ShellWindow.xaml">

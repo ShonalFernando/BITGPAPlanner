@@ -19,7 +19,7 @@ namespace Planner.Client.ViewModel
         // Private fields
         private bool isMenuOpen;
         private string currentPageTitle = "";
-        private string appTitle = "GPA Planner | V 1.0";
+        private string appTitle = "BIT Virtual Assistant | V 1.0";
 
         private Dictionary<string, object> PageDefintions;
         private object currentPage;
@@ -68,6 +68,8 @@ namespace Planner.Client.ViewModel
         public ICommand Goto_CalculatorCommand { get; }
         public ICommand Goto_PlannerCommand { get; }
         public ICommand Goto_TeachingCommand { get; }
+        public ICommand Goto_VLECommand { get; }
+        public ICommand Goto_DrawerCommand { get; }
 
 
         // Constructor
@@ -81,6 +83,8 @@ namespace Planner.Client.ViewModel
             Goto_CalculatorCommand = new RelayCommand(_ => Goto("Calculator"));
             Goto_PlannerCommand = new RelayCommand(_ => Goto("Planner"));
             Goto_TeachingCommand = new RelayCommand(_ => Goto("STXT"));
+            Goto_VLECommand = new RelayCommand(_ => Goto("VLE"));
+            Goto_DrawerCommand = new RelayCommand(_ => Goto("Drawer"));
 
             // Load Pages
             PageDefintions = new Dictionary<string, object>();
@@ -88,6 +92,8 @@ namespace Planner.Client.ViewModel
             PageDefintions.Add("Subjects", new SubjectsViewer());
             PageDefintions.Add("Planner", new SubjectsViewer());
             PageDefintions.Add("STXT", new SubjectsViewer());
+            PageDefintions.Add("VLE", new VLEViewer());
+            PageDefintions.Add("Drawer", new Drawer());
 
             // Load Current Page
             currentPage = CurrentPage = PageDefintions["Calculator"];
