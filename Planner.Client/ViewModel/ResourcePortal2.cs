@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Planner.Client.ViewModel
 {
-    class ResourcePortal2
+    class ResourcePortal2 : ViewModelBase
     {
+
+        public ResourcePortal2()
+        {
+            
+        }
     }
 }

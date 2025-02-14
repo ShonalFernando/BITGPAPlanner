@@ -1,8 +1,10 @@
 ﻿using MahApps.Metro.Controls;
 using Planner.Client.Helper;
+using Planner.Client.ObservableModel;
 using Planner.Client.Services;
 using Planner.Client.View.Pages;
 using Planner.Client.ViewModel;
+using Planner.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;

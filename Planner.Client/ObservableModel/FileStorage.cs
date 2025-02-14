@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Planner.Model;
+using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Linq;
@@ -11,65 +12,102 @@ namespace Planner.Client.ObservableModel
     {
         public int FileID { get; set; }
 
-        public int FileName { get; set; }
+        public string FileName { get; set; } = null!;
 
         public Category Category { get; set; }
-        public int SubjectID { get; set; }
+        public Subject Subject { get; set; } = null!;
 
         public string Description { get; set; } = string.Empty;
 
-        // Create Table
-        public static void CreateFileStorageTable(string connectionString)
+        // Insert Record
+        public static void Insert(string connectionString, FileStorage fileStorage)
         {
             using (var connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-                string query = @"
-                    CREATE TABLE IF NOT EXISTS FileStorage (
-                        FileID INTEGER PRIMARY KEY AUTOINCREMENT,
-                        FileName INTEGER NOT NULL UNIQUE,
-                        Category INTEGER NOT NULL, -- Maps to the Category enum
-                        SubjectID INTEGER NOT NULL,
-                        Description TEXT
-                    );";
-                using (var command = new SQLiteCommand(query, connection))
-                {
-                    command.ExecuteNonQuery();
-                }
-            }
-        }
+                string insertQuery = @"
+            INSERT INTO FileStorage (FileName, Category, SubjectID, Description) 
+            VALUES (@FileName, @Category, @SubjectID, @Description);";
 
-        // Add A File Record
-        public static void AddFileStorage(string connectionString, FileStorage fileStorage)
-        {
-            using (var connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-                string query = @"
-        INSERT INTO FileStorage (FileName, Category, SubjectID, Description)
-        VALUES (@FileName, @Category, @SubjectID, @Description);";
-                using (var command = new SQLiteCommand(query, connection))
+                using (var command = new SQLiteCommand(insertQuery, connection))
                 {
                     command.Parameters.AddWithValue("@FileName", fileStorage.FileName);
-                    command.Parameters.AddWithValue("@Category", (int)fileStorage.Category);
-                    command.Parameters.AddWithValue("@SubjectID", fileStorage.SubjectID);
-                    command.Parameters.AddWithValue("@Description", fileStorage.Description ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@Category", fileStorage.Category.ToString());
+                    command.Parameters.AddWithValue("@SubjectID", fileStorage.Subject.SubjectId);
+                    command.Parameters.AddWithValue("@Description", fileStorage.Description);
 
                     command.ExecuteNonQuery();
                 }
             }
         }
 
-        // Get all File Records
-        public static List<FileStorage> GetAllFileStorage(string connectionString)
+        // Create Table
+        public static void CreateTable(string connectionString)
         {
-            var fileStorages = new List<FileStorage>();
             using (var connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-                string query = "SELECT * FROM FileStorage;";
+                string createTableQuery = @"
+                CREATE TABLE IF NOT EXISTS FileStorage (
+                    FileID INTEGER PRIMARY KEY AUTOINCREMENT,
+                    FileName TEXT NOT NULL,
+                    Category TEXT NOT NULL,
+                    SubjectID INTEGER NOT NULL,
+                    Description TEXT,
+                    FOREIGN KEY (SubjectID) REFERENCES Subject(SubjectId)
+                );";
+
+                using (var command = new SQLiteCommand(createTableQuery, connection))
+                {
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        // Get All Records
+        public static List<FileStorage> GetAll(string connectionString)
+        {
+            var fileStorages = new List<FileStorage>();
+
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT * FROM FileStorage";
+
+                using (var command = new SQLiteCommand(query, connection))
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        fileStorages.Add(new FileStorage
+                        {
+                            FileID = Convert.ToInt32(reader["FileID"]),
+                            FileName = reader["FileName"].ToString() ?? string.Empty,
+                            Category = Enum.Parse<Category>(reader["Category"].ToString()!),
+                            Subject = Subject.GetSubjectById(connectionString,Convert.ToInt32(reader["SubjectID"])) ?? new Subject(),
+                            Description = reader["Description"].ToString()!
+                        });
+                    }
+                }
+            }
+
+            return fileStorages;
+        }
+
+        // Get Records by SubjectID
+        public static List<FileStorage> GetBySubject(string connectionString, int subjectId)
+        {
+            var fileStorages = new List<FileStorage>();
+
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT * FROM FileStorage WHERE SubjectID = @SubjectID";
+
                 using (var command = new SQLiteCommand(query, connection))
                 {
+                    command.Parameters.AddWithValue("@SubjectID", subjectId);
+
                     using (var reader = command.ExecuteReader())
                     {
                         while (reader.Read())
@@ -77,152 +115,61 @@ namespace Planner.Client.ObservableModel
                             fileStorages.Add(new FileStorage
                             {
                                 FileID = Convert.ToInt32(reader["FileID"]),
-                                FileName = Convert.ToInt32(reader["FileName"]),
-                                Category = (Category)Convert.ToInt32(reader["Category"]),
-                                SubjectID = Convert.ToInt32(reader["SubjectID"]),
-                                Description = reader["Description"]?.ToString() ?? string.Empty
+                                FileName = reader["FileName"].ToString() ?? string.Empty,
+                                Category = Enum.Parse<Category>(reader["Category"].ToString()!),
+                                Subject = Subject.GetSubjectById(connectionString, Convert.ToInt32(reader["SubjectID"])) ?? new Subject(),
+                                Description = reader["Description"].ToString()!
                             });
                         }
                     }
                 }
             }
+
             return fileStorages;
         }
 
-        // Update File Record
-        public static void UpdateFileStorage(string connectionString, FileStorage fileStorage)
+        // Update Record
+        public static void Update(string connectionString, FileStorage fileStorage)
         {
             using (var connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-                string query = @"
-        UPDATE FileStorage
-        SET FileName = @FileName, 
-            Category = @Category, 
-            SubjectID = @SubjectID, 
-            Description = @Description
-        WHERE FileID = @FileID;";
-                using (var command = new SQLiteCommand(query, connection))
+                string updateQuery = @"
+                UPDATE FileStorage 
+                SET FileName = @FileName, 
+                    Category = @Category, 
+                    SubjectID = @SubjectID, 
+                    Description = @Description 
+                WHERE FileID = @FileID";
+
+                using (var command = new SQLiteCommand(updateQuery, connection))
                 {
                     command.Parameters.AddWithValue("@FileID", fileStorage.FileID);
                     command.Parameters.AddWithValue("@FileName", fileStorage.FileName);
-                    command.Parameters.AddWithValue("@Category", (int)fileStorage.Category);
-                    command.Parameters.AddWithValue("@SubjectID", fileStorage.SubjectID);
-                    command.Parameters.AddWithValue("@Description", fileStorage.Description ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@Category", fileStorage.Category.ToString());
+                    command.Parameters.AddWithValue("@SubjectID", fileStorage.Subject.SubjectId);
+                    command.Parameters.AddWithValue("@Description", fileStorage.Description);
 
                     command.ExecuteNonQuery();
                 }
             }
         }
 
-        // Delete a File Record
-        public static void DeleteFileStorage(string connectionString, int fileID)
+        // Delete Record
+        public static void Delete(string connectionString, int fileID)
         {
             using (var connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-                string query = "DELETE FROM FileStorage WHERE FileID = @FileID;";
-                using (var command = new SQLiteCommand(query, connection))
+                string deleteQuery = "DELETE FROM FileStorage WHERE FileID = @FileID";
+
+                using (var command = new SQLiteCommand(deleteQuery, connection))
                 {
                     command.Parameters.AddWithValue("@FileID", fileID);
                     command.ExecuteNonQuery();
                 }
             }
         }
-
-        // Get File Storage by Subject
-        public static List<FileStorage> GetFileStorageBySubject(string connectionString, int subjectID)
-        {
-            var fileStorages = new List<FileStorage>();
-            using (var connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-                string query = "SELECT * FROM FileStorage WHERE SubjectID = @SubjectID;";
-                using (var command = new SQLiteCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@SubjectID", subjectID);
-                    using (var reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            fileStorages.Add(new FileStorage
-                            {
-                                FileID = Convert.ToInt32(reader["FileID"]),
-                                FileName = Convert.ToInt32(reader["FileName"]),
-                                Category = (Category)Convert.ToInt32(reader["Category"]),
-                                SubjectID = Convert.ToInt32(reader["SubjectID"]),
-                                Description = reader["Description"]?.ToString() ?? string.Empty
-                            });
-                        }
-                    }
-                }
-            }
-            return fileStorages;
-        }
-
-        // Get File Storage by Category
-        public static List<FileStorage> GetFileStorageByCategory(string connectionString, Category category)
-        {
-            var fileStorages = new List<FileStorage>();
-            using (var connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-                string query = "SELECT * FROM FileStorage WHERE Category = @Category;";
-                using (var command = new SQLiteCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@Category", (int)category);
-                    using (var reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            fileStorages.Add(new FileStorage
-                            {
-                                FileID = Convert.ToInt32(reader["FileID"]),
-                                FileName = Convert.ToInt32(reader["FileName"]),
-                                Category = (Category)Convert.ToInt32(reader["Category"]),
-                                SubjectID = Convert.ToInt32(reader["SubjectID"]),
-                                Description = reader["Description"]?.ToString() ?? string.Empty
-                            });
-                        }
-                    }
-                }
-            }
-            return fileStorages;
-        }
-
-
-        // Get File Storage by Subject and Category
-        public static List<FileStorage> GetFileStorageBySubjectAndCategory(string connectionString, int subjectID, Category category)
-        {
-            var fileStorages = new List<FileStorage>();
-            using (var connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-                string query = "SELECT * FROM FileStorage WHERE SubjectID = @SubjectID AND Category = @Category;";
-                using (var command = new SQLiteCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@SubjectID", subjectID);
-                    command.Parameters.AddWithValue("@Category", (int)category);
-                    using (var reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            fileStorages.Add(new FileStorage
-                            {
-                                FileID = Convert.ToInt32(reader["FileID"]),
-                                FileName = Convert.ToInt32(reader["FileName"]),
-                                Category = (Category)Convert.ToInt32(reader["Category"]),
-                                SubjectID = Convert.ToInt32(reader["SubjectID"]),
-                                Description = reader["Description"]?.ToString() ?? string.Empty
-                            });
-                        }
-                    }
-                }
-            }
-            return fileStorages;
-        }
-
-
 
     }
 
