@@ -21,11 +21,16 @@ namespace Planner.Client.View.Pages
     /// </summary>
     public partial class CalculatorPage : Page
     {
+        GPACalculator _gpaCalculator;
+
         public CalculatorPage()
         {
             InitializeComponent();
-            GPACalculator _gpaCalculator = new();
+            _gpaCalculator = new();
             DataContext = _gpaCalculator;
         }
+
+        private void SubjectSelected(object sender, SelectionChangedEventArgs e)
+            => _gpaCalculator.SubjectCheckTrigger();
     }
 }

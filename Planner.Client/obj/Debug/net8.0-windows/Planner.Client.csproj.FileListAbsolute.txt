@@ -177,3 +177,7 @@ D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Dialo
 D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Dialogs\AddResourceDialog.baml
 D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Pages\ResourcePortal.g.cs
 D:\Source\Repos\BITGPAPlanner\Planner.Client\obj\Debug\net8.0-windows\View\Pages\ResourcePortal.baml
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\WindowIcons\BITGPAPlanner.ico
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\WindowIcons\GPAPlanner_darkIcon.ico
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\Icons\icons8-project-64.png
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\Icons\icons8-clear-64.png

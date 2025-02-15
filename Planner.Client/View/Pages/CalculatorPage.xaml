@@ -4,9 +4,17 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Planner.Client.View.Pages"
+      xmlns:helper="clr-namespace:Planner.Client.Helper"
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="1300"
       Title="CalculatorPage">
+
+    <Page.Resources>
+        <helper:EnumDescriptionConverter x:Key="EnumDescriptionConverter" />
+        <DataTemplate x:Key="EnumTemplate">
+            <TextBlock Text="{Binding Converter={StaticResource EnumDescriptionConverter}}" />
+        </DataTemplate>
+    </Page.Resources>
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -20,6 +28,21 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Column="1" Grid.Row="1" Background="{DynamicResource MahApps.Brushes.Gray1}">
+
+            <Label Content="Filters" VerticalAlignment="Center" FontSize="28" FontFamily="Segoe UI Semilight" Foreground="White" />
+
+            <!-- Subject Code -->
+            <Label Content="Level" VerticalAlignment="Center" Foreground="White" />
+            <mah:NumericUpDown Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" Minimum="1" Maximum="3"
+Value="{Binding FilterYear, Mode=TwoWay}" IsReadOnly="{Binding IsAllYears}"/>
+
+            <!-- GPA Credits -->
+            <mah:ToggleSwitch Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" Foreground="White" Content="All Years" IsOn="{Binding IsAllYears}"/>
+
+            <Button Style="{DynamicResource MahApps.Styles.Button.Flat}" Content="Set"  Width="100" Margin="0,20,15,0" HorizontalAlignment="Right" Command="{Binding ResetFiltersCommand}"/>
+
+            <Separator Margin="10" />
+
             <Label Content="Assign Subject" VerticalAlignment="Center" FontSize="28" FontFamily="Segoe UI Semilight" Foreground="White" />
 
             <!-- Subject Code -->
@@ -27,36 +50,23 @@
             <ComboBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
              ItemsSource="{Binding Subjects}" 
              DisplayMemberPath="SubjectName" 
-             SelectedItem="{Binding SelectedSubject, Mode=TwoWay}" />
+             SelectedItem="{Binding SelectedSubject, Mode=TwoWay}" SelectionChanged="SubjectSelected"/>
+
+
 
             <!-- GPA Credits -->
             <Label Content="Result" Grid.Row="4" VerticalAlignment="Center" Margin="0,0,0,0" Foreground="White"/>
             <ComboBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" ItemsSource="{Binding Grades}"
-             SelectedItem="{Binding SelectedSubjectGrade, Mode=TwoWay}"/>
+             SelectedItem="{Binding SelectedSubjectGrade, Mode=TwoWay}" ItemTemplate="{StaticResource EnumTemplate}" />
 
             <mah:ToggleSwitch Content="Repeat?" Width="230" HorizontalAlignment="Left" Margin="5,10,5,0" Foreground="White" IsOn="{Binding IsRepeat}"/>
-
-            <mah:ToggleSwitch Content="Enhancement?" Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" Foreground="White" IsOn="{Binding IsEnhancement}"/>
+            <mah:ToggleSwitch Content="Enhancement?" Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" Foreground="White" IsOn="{Binding IsEnhancement}" />
+            <mah:ToggleSwitch Content="Neglect?" Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" Foreground="White" IsOn="{Binding IsNeglect}"/>
 
             <Button Style="{DynamicResource MahApps.Styles.Button.Flat}" Content="Add"  Width="100" Margin="0,20,15,0" HorizontalAlignment="Right" Command="{Binding AddCommand}"/>
 
             <Separator Margin="10" />
 
-            <Label Content="Filters" VerticalAlignment="Center" FontSize="28" FontFamily="Segoe UI Semilight" Foreground="White" />
-
-            <!-- Subject Code -->
-            <Label Content="Level" VerticalAlignment="Center" Foreground="White" />
-            <TextBox Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" 
-            Text="{Binding FilterYear, Mode=TwoWay}"/>
-
-            <!-- GPA Credits -->
-            <mah:ToggleSwitch Width="230" HorizontalAlignment="Left" Margin="5,0,5,0" Foreground="White" Content="All Years" IsOn="{Binding IsAllYears}"/>
-
-
-            <Button Style="{DynamicResource MahApps.Styles.Button.Flat}" Content="Set"  Width="100" Margin="0,20,15,0" HorizontalAlignment="Right" Command="{Binding ResetFiltersCommand}"/>
-
-            <Separator Margin="10" />
-            
             <Label Content="Total GPA" VerticalAlignment="Center" FontSize="28" FontFamily="Segoe UI Semilight" Foreground="White" />
 
             <Label Content="{Binding TotalGPA}" VerticalAlignment="Center" FontSize="28" FontFamily="Consolas" Foreground="White" Margin="10,0,0,0"/>
@@ -66,7 +76,7 @@
 
         <DataGrid Grid.Row="1" Grid.Column="0"
           ItemsSource="{Binding DisplayedScores}"
-          SelectedItem="{Binding SelectedSubject, Mode=TwoWay}"
+          SelectedItem="{Binding SelectedDisplayedSubject, Mode=TwoWay}" SelectionMode="Single"
           AutoGenerateColumns="False"
           IsReadOnly="True"
           HorizontalAlignment="Stretch">
@@ -113,16 +123,24 @@
                     <TextBlock Text=" Remove" FontSize="12" />
                 </StackPanel>
             </Button>
-            <Button Margin="1,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding ResetFiltersCommand}" Background="#19D5D5D5">
+
+            <Button Margin="1,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding ResetCommand}" Background="#19D5D5D5">
                 <StackPanel Orientation="Vertical">
-                    <Image Source="/Assets/InterfaceIcons/icons8-reset-64.png" Width="32" Height="32" />
-                    <TextBlock Text=" Reset " FontSize="12" />
+                    <Image Source="/Assets/Icons/icons8-clear-64.png" Width="32" Height="32" />
+                    <TextBlock Text=" Clear " FontSize="12" />
                 </StackPanel>
             </Button>
             <Button Margin="1,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding SaveCommand}" Background="#19D5D5D5">
                 <StackPanel Orientation="Vertical">
                     <Image Source="/Assets/InterfaceIcons/icons8-save-64.png" Width="32" Height="32" />
                     <TextBlock Text=" Save " FontSize="12" />
+                </StackPanel>
+            </Button>
+            <Separator Background="#7FA9A9A9" Margin="0,5,0,5" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+            <Button Margin="1,5,0,5" Width="100" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding ResetFiltersCommand}" Background="#19D5D5D5">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Assets/InterfaceIcons/icons8-reset-64.png" Width="32" Height="32" />
+                    <TextBlock Text=" Reset Filters " FontSize="12" />
                 </StackPanel>
             </Button>
         </StackPanel>

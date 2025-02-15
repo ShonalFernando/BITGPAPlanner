@@ -8,7 +8,7 @@
         xmlns:behav="clr-namespace:Planner.Client.Behaviours"
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
-        Title="{Binding AppTitle}" Height="768" Width="1366">
+        Title="{Binding AppTitle}" Height="768" Width="1366" Icon="/Assets/WindowIcons/GPAPlanner_darkIcon.ico" >
 
     <mah:MetroWindow.Flyouts>
         <mah:FlyoutsControl>

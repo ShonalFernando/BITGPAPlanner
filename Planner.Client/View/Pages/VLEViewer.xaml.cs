@@ -32,25 +32,23 @@ namespace Planner.Client.View.Pages
         }
 
         private void NavigateForward(object sender, RoutedEventArgs e)
-        {
+        =>
             MainWebview.GoForward();
-        }
+        
 
         private void GoBack(object sender, RoutedEventArgs e)
-        {
+        =>
             MainWebview.GoBack();
-        }
+        
 
         private void OpenWeb(object sender, RoutedEventArgs e)
-        {
-            MainWebview.Source = new Uri("https://www.bit.lk/");
-        }
+        =>            MainWebview.Source = new Uri("https://www.bit.lk/");
 
         private void OpenVLE(object sender, RoutedEventArgs e)
-        {
+        =>
             MainWebview.Source = new Uri("https://vle.bit.lk/");
 
-        }
+        
 
         private void UpdateButtons(object sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
         {
@@ -72,8 +70,9 @@ namespace Planner.Client.View.Pages
         }
 
         private void StartLoader(object sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs e)
-        {
-            ProgressViewer.IsIndeterminate = true;
-        }
+            => ProgressViewer.IsIndeterminate = true;
+
+        private void OpenPVLE(object sender, RoutedEventArgs e)
+        => MainWebview.Source = new Uri("https://project.vle.bit.lk/");
     }
 }

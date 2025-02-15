@@ -16,6 +16,7 @@ namespace Planner.Client.ObservableModel
 
         public bool     Repeat          { get; set; }
         public bool     Enhancement     { get; set; }
+        public bool     Neglect     { get; set; }
 
         public Grade    GradeObtained   { get; set; }
         public string   GradeDisplayed  { get; set; } = null!;

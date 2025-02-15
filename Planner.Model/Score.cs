@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -72,28 +73,28 @@ namespace Planner.Model
 
     public enum Grade
     {
-        APlus,
-        A,
-        AMinus,
+        [Description("A+ (4.00)")] APlus,
+        [Description("A (4.00)")] A,
+        [Description("A- (3.70)")] AMinus,
 
-        BPlus,
-        B,
-        BMinus,
+        [Description("B+ (3.30)")] BPlus,
+        [Description("B (3.00)")] B,
+        [Description("B- (2.70)")] BMinus,
 
-        CPlus,
-        C,
-        CMinus,
+        [Description("C+ (2.30)")] CPlus,
+        [Description("C (2.00)")] C,
+        [Description("C- (1.70)")] CMinus,
 
-        DPlus,
-        D,
+        [Description("D+ (1.30)")] DPlus,
+        [Description("D (1.00)")] D,
 
-        E,
+        [Description("E (0.00)")] E,
 
         // This point Onwards Logic Will Identify and Override Default Mapping Logic
 
-        AB,
+        [Description("Absent (0.00)")] AB,
 
-        P,
-        F
+        [Description("Pass")] P,
+        [Description("Fail")] F
     }
 }

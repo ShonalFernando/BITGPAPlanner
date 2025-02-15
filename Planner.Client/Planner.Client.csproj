@@ -7,6 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>GPAPlanner_darkIcon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,11 +17,13 @@
     <None Remove="Assets\Icons\icons8-backup-48.png" />
     <None Remove="Assets\Icons\icons8-book-48.png" />
     <None Remove="Assets\Icons\icons8-calculator-48.png" />
+    <None Remove="Assets\Icons\icons8-clear-64.png" />
     <None Remove="Assets\Icons\icons8-cloud-backup-restore-48.png" />
     <None Remove="Assets\Icons\icons8-library-48.png" />
     <None Remove="Assets\Icons\icons8-menu-48.png" />
     <None Remove="Assets\Icons\icons8-open-file-48.png" />
     <None Remove="Assets\Icons\icons8-planner-50.png" />
+    <None Remove="Assets\Icons\icons8-project-64.png" />
     <None Remove="Assets\Icons\icons8-teaching-50.png" />
     <None Remove="Assets\InterfaceIcons\icons8-add-file-64.png" />
     <None Remove="Assets\InterfaceIcons\icons8-back-64.png" />
@@ -42,6 +45,8 @@
     <None Remove="Assets\InterfaceIcons\icons8-save-64.png" />
     <None Remove="Assets\InterfaceIcons\icons8-video-playlist-64.png" />
     <None Remove="Assets\InterfaceIcons\icons8-web-64.png" />
+    <None Remove="Assets\WindowIcons\BITGPAPlanner.ico" />
+    <None Remove="Assets\WindowIcons\GPAPlanner_darkIcon.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -63,6 +68,9 @@
     <Content Include="Assets\Icons\icons8-calculator-48.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Icons\icons8-clear-64.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Icons\icons8-cloud-backup-restore-48.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -76,6 +84,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Icons\icons8-planner-50.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Icons\icons8-project-64.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Icons\icons8-teaching-50.png">
@@ -141,6 +152,13 @@
     <Content Include="Assets\InterfaceIcons\icons8-web-64.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\WindowIcons\BITGPAPlanner.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\WindowIcons\GPAPlanner_darkIcon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GPAPlanner_darkIcon.ico" />
   </ItemGroup>
 
   <ItemGroup>

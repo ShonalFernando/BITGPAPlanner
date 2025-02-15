@@ -25,6 +25,12 @@
                     <TextBlock Text=" VLE Home" FontSize="12" />
                 </StackPanel>
             </Button>
+            <Button Margin="5,5,0,5" Width="100" IsEnabled="{Binding IsPVLEEnable}" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding CalculateCommand}" Background="#19D5D5D5" Click="OpenPVLE" >
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Assets/Icons/icons8-project-64.png" Width="32" Height="32" />
+                    <TextBlock Text="Project VLE" FontSize="12" />
+                </StackPanel>
+            </Button>
             <Button Margin="5,5,0,5" Width="100" IsEnabled="{Binding IsSiteEnable}" Style="{DynamicResource MahApps.Styles.Button.Hamburger}" Command="{Binding CalculateCommand}" Background="#19D5D5D5" Click="OpenWeb">
                 <StackPanel Orientation="Vertical">
                     <Image Source="/Assets/InterfaceIcons/icons8-web-64.png" Width="32" Height="32" />
