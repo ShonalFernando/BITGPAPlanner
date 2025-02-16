@@ -181,3 +181,14 @@ D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\Win
 D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\WindowIcons\GPAPlanner_darkIcon.ico
 D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\Icons\icons8-project-64.png
 D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Assets\Icons\icons8-clear-64.png
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Foundatio.dll
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Foundatio.MessagePack.dll
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\MessagePack.dll
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\MessagePack.Annotations.dll
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Microsoft.Bcl.TimeProvider.dll
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Microsoft.NET.StringTools.dll
+D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\System.Text.Json.dll

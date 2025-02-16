@@ -227,8 +227,8 @@ namespace Planner.Client.ViewModel
         /// </summary>
         private void SaveScores(object? parameter)
         {
-            // Placeholder: Save operation (e.g., to database or file)
-            // ScoreRepository.SaveScores(DisplayedScores);
+            if (DisplayedScores.Count > 0)
+                ScoreFileHandler.SaveScoresFile(new ScoresFile { DateModified = DateTime.Now, DateSaved = DateTime.Now, Scores = DisplayedScores });
         }
 
         private bool CanSaveScores(object? parameter) => DisplayedScores.Count > 0;

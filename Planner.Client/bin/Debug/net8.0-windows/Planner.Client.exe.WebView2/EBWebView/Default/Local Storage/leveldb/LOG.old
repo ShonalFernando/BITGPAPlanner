@@ -1,5 +1,5 @@
-2025/02/14-16:35:19.508 49ec Reusing MANIFEST D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Planner.Client.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2025/02/14-16:35:19.565 49ec Recovering log #63
-2025/02/14-16:35:19.566 49ec Level-0 table #66: started
-2025/02/14-16:35:19.637 49ec Level-0 table #66: 28989 bytes OK
-2025/02/14-16:35:19.679 49ec Delete type=0 #63
+2025/02/15-14:18:56.088 afc Reusing MANIFEST D:\Source\Repos\BITGPAPlanner\Planner.Client\bin\Debug\net8.0-windows\Planner.Client.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2025/02/15-14:18:56.133 afc Recovering log #67
+2025/02/15-14:18:56.133 afc Level-0 table #69: started
+2025/02/15-14:18:56.258 afc Level-0 table #69: 31291 bytes OK
+2025/02/15-14:18:56.298 afc Delete type=0 #67

@@ -12,8 +12,8 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Source\Repos\BITGPAPlanner\Planner.Client\App.xaml
 16500619271
 401772462229
-52-831086524
-252359731668
+551973759216
+2611866283981
 View\Auxillary\SplashScreen.xaml;View\Dialogs\AddResourceDialog.xaml;View\Dialogs\DropSelectorDialog.xaml;View\Dialogs\GridSelector.xaml;View\Dialogs\InputDialog.xaml;View\Dialogs\LogTester.xaml;View\Dialogs\PopupDialog.xaml;View\Dialogs\SubjectAdder.xaml;View\Dialogs\SubjectsLoader.xaml;View\Pages\CalculatorPage.xaml;View\Pages\Drawer.xaml;View\Pages\PlannerView.xaml;View\Pages\ResourcePortal.xaml;View\Pages\SubjectsViewer.xaml;View\Pages\VLEViewer.xaml;View\ShellWindow.xaml;
 
 False
