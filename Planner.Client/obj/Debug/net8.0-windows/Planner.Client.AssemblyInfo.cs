@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Planner.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7698a4ee6787d7ded56721a5a5381e5816132eec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2cc4bd21a6494e9e83e1802bbbdfe031e055992")]
 [assembly: System.Reflection.AssemblyProductAttribute("Planner.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Planner.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
